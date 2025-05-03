@@ -196,44 +196,58 @@
                             <li>HTML, CSS, LaTeX ⭐⭐⭐⭐</li>
                             <li>Prolog ⭐⭐</li>
                         </ul>
-                        <br><hr><br>
+                        <br>
+                        <hr>
+                        <br>
                         <h3>🧰 Frameworks e Librerie</h3>
                         <ul>
                             <li>Spring (Boot, Data JPA, MVC, Security, Cloud Gateway)</li>
                             <li>Liferay, Java Servlet, EJB, Swing, JavaFX, JSF</li>
                             <li>RESTful, SOAP, JSON, XML, YAML</li>
                         </ul>
-                        <br><hr><br>
+                        <br>
+                        <hr>
+                        <br>
                         <h3>🖥️ Application Server & Tools</h3>
                         <ul>
                             <li>Apache Tomcat, WildFly</li>
                             <li>Postman, Keycloak (SAML2, IdP), WSO2</li>
                             <li>Docker, Kubernetes (Google Cloud), Jenkins (CI/CD), Microsoft Azure</li>
                         </ul>
-                        <br><hr><br>
+                        <br>
+                        <hr>
+                        <br>
                         <h3>🔧 Build, Versioning e Atlassian Tools</h3>
                         <ul>
                             <li>Maven, Gradle, GIT</li>
                             <li>Jira, Confluence, Trello, Atlas, SourceTree</li>
                         </ul>
-                        <br><hr><br>
+                        <br>
+                        <hr>
+                        <br>
                         <h3>🔄 Automation & IBM Tools</h3>
                         <ul>
                             <li>RedHat PAM, IBM RTC, IBM DOORS</li>
                         </ul>
-                        <br><hr><br>
+                        <br>
+                        <hr>
+                        <br>
                         <h3>🛠️ Database e Data Management</h3>
                         <ul>
                             <li>PostgreSQL, OracleSQL, MySQL, MongoDB</li>
                             <li>HeidiSQL, DBeaverSQL, GraphQL</li>
                         </ul>
-                        <br><hr><br>
+                        <br>
+                        <hr>
+                        <br>
                         <h3>🌐 Sistemi Operativi & Networking</h3>
                         <ul>
                             <li>Linux CLI (SSH, SFTP, gestione utenti/permessi)</li>
                             <li>PuTTY, VMware vSphere Client</li>
                         </ul>
-                        <br><hr><br>
+                        <br>
+                        <hr>
+                        <br>
                         <h3>🧠 Software Design & Architettura</h3>
                         <ul>
                             <li>Progettazione di soluzioni modulari e scalabili</li>
@@ -259,50 +273,54 @@
                     </section>
                 </main>
                 <footer class="footer">
-                    <p>&copy; 2025 Gianmarco Simeoni. Tutti i diritti riservati. | Made with 💙 HTML/CSS & JavaScript</p>
+                    <p>&copy; <span id="current-year"></span> Gianmarco Simeoni. Tutti i diritti riservati. | Made with 💙 HTML/CSS & JavaScript</p>
                 </footer>
             </div>
         </body>
-        <!-- SCRIPT AREA -->
-        <script>
-    const navLinks = document.querySelectorAll(".nav a");
-    const sections = document.querySelectorAll(".section");
-  
-    // Nasconde tutte le sezioni
-    function hideAllSections() {
-      sections.forEach(section => {
-        section.style.display = "none";
-      });
-    }
-  
-    // Mostra la sezione selezionata
-    function showSection(id) {
-      hideAllSections();
-      const sectionToShow = document.getElementById(id);
-      if (sectionToShow) {
-        sectionToShow.style.display = "block";
-        sectionToShow.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  
-    // Imposta gli event listener
-    navLinks.forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault();
-  
-        // Rimuovi "active" da tutti i link
-        navLinks.forEach(l => l.classList.remove("active"));
-        // Aggiungi "active" al link cliccato
-        link.classList.add("active");
-  
-        const targetId = link.getAttribute("href").substring(1);
-        showSection(targetId);
-      });
-    });
-  
-    // All'avvio mostra solo la prima sezione
-    hideAllSections();
-    document.getElementById("about").style.display = "block";
-    navLinks[0].classList.add("active");
-        </script>
-    </html>
+        
+    <!-- SCRIPT AREA -->
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+      </script>      
+    <script>
+        const navLinks = document.querySelectorAll(".nav a");
+        const sections = document.querySelectorAll(".section");
+    
+        // Nasconde tutte le sezioni
+        function hideAllSections() {
+        sections.forEach(section => {
+            section.style.display = "none";
+        });
+        }
+    
+        // Mostra la sezione selezionata
+        function showSection(id) {
+        hideAllSections();
+        const sectionToShow = document.getElementById(id);
+        if (sectionToShow) {
+            sectionToShow.style.display = "block";
+            sectionToShow.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+    
+        // Imposta gli event listener
+        navLinks.forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+    
+            // Rimuovi "active" da tutti i link
+            navLinks.forEach(l => l.classList.remove("active"));
+            // Aggiungi "active" al link cliccato
+            link.classList.add("active");
+    
+            const targetId = link.getAttribute("href").substring(1);
+            showSection(targetId);
+        });
+        });
+    
+        // All'avvio mostra solo la prima sezione
+        hideAllSections();
+        document.getElementById("about").style.display = "block";
+        navLinks[0].classList.add("active");
+    </script>
+</html>
