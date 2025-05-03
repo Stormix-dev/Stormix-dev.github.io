@@ -1,64 +1,308 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gianmarco Simeoni - Stormix-dev</title>
-  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css" />
-</head>
-<body>
-
-  <main class="container">
-    <header>
-      <h1>👋 Ciao, sono Gianmarco Simeoni</h1>
-      <p><strong>Sviluppatore Mid-Level</strong> specializzato nel <strong>back-end</strong>.</p>
-    </header>
-
-    <section>
-      <h2>💻 Competenze principali</h2>
-      <ul>
-        <li><strong>Linguaggi:</strong> C, C++, Java, C#, Rust, JavaScript</li>
-        <li><strong>Markup & Tooling:</strong> HTML, CSS, LaTeX</li>
-        <li><strong>Framework:</strong> Spring Boot, Angular, Rust</li>
-        <li><strong>Sistemi Operativi:</strong> Windows & Linux</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🎯 Progetti recenti</h2>
-      <ul>
-        <li><strong>Codewars Challenges:</strong> esercizi su algoritmi e strutture dati</li>
-        <li><strong>TF2 Map Scraper:</strong> web scraper in Rust per immagini da Google</li>
-        <li><strong>BookStore Anonimo:</strong> progetto e-commerce sicuro (Spring Boot)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>📌 GitHub Projects</h2>
-      <ul>
-        <li><a href="https://github.com/Stormix-dev/PBKDF2-Java" target="_blank">PBKDF2 in Java</a></li>
-        <li><a href="https://github.com/Stormix-dev/PBKDF2-CSharp" target="_blank">PBKDF2 in C#</a></li>
-        <li><a href="https://github.com/Stormix-dev/PBKDF2-Rust" target="_blank">PBKDF2 in Rust</a></li>
-        <li><a href="https://github.com/Stormix-dev/TF2-Map-Scraper" target="_blank">TF2 Map Image Scraper</a></li>
-        <li><a href="https://github.com/Stormix-dev/p2p_chat" target="_blank">Chat P2P in Rust</a></li>
-        <li><a href="https://github.com/Stormix-dev/anonymous-bookstore" target="_blank">BookStore Anonimo</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>📩 Contatti</h2>
-      <p>
-        <a href="https://www.linkedin.com/in/gianmarco-simeoni-software-developer-engineer/" target="_blank">
-          LinkedIn - Gianmarco Simeoni <br>
-        <a href="https://github.com/Stormix-dev" target="_blank">GitHub</a>
-        </a>
-      </p>
-    </section>
-
-    <footer>
-      <p><small>&copy; 2025 Gianmarco Simeoni - Stormix-dev</small></p>
-    </footer>
-  </main>
-
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gianmarco Simeoni - Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a2e0e6ad84.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <div class="profile">
+                    <img src="img/foto_profilo.jpg" alt="Foto Profilo">
+                    <h2>Gianmarco Simeoni</h2>
+                    <p>Sviluppatore Back-End</p>
+                </div>
+                <nav class="nav">
+                    <a href="#about">
+                        <i class="fas fa-user"></i>
+                        Chi sono
+                    </a>
+                    <a href="#projects">
+                        <i class="fas fa-code"></i>
+                        Progetti
+                    </a>
+                    <a href="#skills">
+                        <i class="fas fa-tools"></i>
+                        Competenze
+                    </a>
+                    <a href="#contact">
+                        <i class="fas fa-envelope"></i>
+                        Contatti
+                    </a>
+                </nav>
+            </aside>
+            <div class="wrapper">
+                <main class="main-content">
+                    <!-- Sezione 'Chi sono' -->
+                    <section id="about" class="section">
+                        <h1>👋 Ciao!</h1>
+                        <p>Mi chiamo Gianmarco, sono uno sviluppatore back-end con passione per sistemi robusti, prestazioni e sicurezza. Amo costruire soluzioni scalabili, testabili e ben strutturate.</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <h3>🎓 Formazione</h3>
+                        <ul>
+                            <li>
+                                <strong>Laurea in Ingegneria Informatica</strong>
+                                – Università degli Studi delle Camere di Commercio Italiane (2022-2025)
+                            </li>
+                            <li>
+                                <strong>Diploma Liceo Scientifico, opzione Scienze Applicate</strong>
+                                – I.T.I.S. Stanislao Cannizzaro (2010-2016)
+                            </li>
+                        </ul>
+                        <br>
+                        <hr>
+                        <br>
+                        <h3>💼 Esperienze</h3>
+                        <ul>
+                            <li class="default">
+                                <strong>Software Developer Specialist</strong>
+                                – Engineering Group (lug 2024 - Presente)
+                            </li>
+                            <li>
+                                <strong>Tutor di matematica e scienze</strong>
+                                – (2021 - Presente): Freelence, ho fornito tutoraggio privato in matematica e fisica, conducendo lezioni a distanza per gli studenti delle scuole superiori
+                            </li>
+                            <li class="default">
+                                <strong>Software Analyst</strong>
+                                – NAIS (feb 2024 - lug 2024)
+                                <ul>
+                                    <li class="custom">
+                                        Middle Java Standalone Dev presso
+                                        <strong>Techno Sky</strong>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="default">
+                                <strong>Atlassian Expert</strong>
+                                – SourceSense (nov 2022 - feb 2024)
+                            </li>
+                            <li class="default">
+                                <strong>Software Engineer</strong>
+                                – NTT Data (set 2022 - nov 2022)
+                            </li>
+                            <li class="default">
+                                <strong>Java Software Developer</strong>
+                                – Jdk S.r.l (giu 2021 - set 2022)
+                                <ul>
+                                    <li class="custom">
+                                        Atlassian Consultant presso
+                                        <strong>Sourcesense</strong>
+                                    </li>
+                                    <li class="custom">
+                                        Java Consultant presso
+                                        <strong>Accenture Italia</strong>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="default">
+                                <strong>Java Fullstack Developer</strong>
+                                – Exolab S.r.l (set 2020 - mag 2021)
+                            </li>
+                        </ul>
+                        <br>
+                        <hr>
+                        <br>
+                        <h3>💬 Su di me</h3>
+                        <p>Amo esplorare nuovi linguaggi di programmazione, paradigmi software e pattern architetturali, mantenendo sempre aggiornate le mie competenze. Dedico parte del mio tempo allo studio di tecnologie emergenti, tra cui l'intelligenza artificiale e i sistemi distribuiti.</p>
+                        <p>Mi piace mettermi alla prova con sfide algoritmiche su piattaforme come Codewars, migliorando la mia capacità di problem solving e scrittura di codice ottimizzato. Sono convinto che l’apprendimento continuo sia essenziale per un software engineer e cerco di affinare costantemente le mie capacità tecniche.</p>
+                    </section>
+                    <!-- Sezione 'Progetti' -->
+                    <section id="projects" class="section">
+                        <h2>🚀 Progetti</h2>
+                        <h3>🔗 Progetti su GitHub</h3>
+                        <ul>
+                            <li class="default">
+                                <strong>PBKDF2-Rust:</strong>
+                                <a href="https://github.com/Stormix-dev/PBKDF2-Rust" target="_blank">[link]</a>
+                                Implementazione ultra-performante in Rust
+                            </li>
+                            <li class="default">
+                                <strong>PBKDF2-C#:</strong>
+                                <a href="https://github.com/Stormix-dev/PBKDF2-CSharp" target="_blank">[link]</a>
+                                Implementazione dell'algoritmo in C#
+                            </li>
+                            <li class="default">
+                                <strong>PBKDF2-Java:</strong>
+                                <a href="https://github.com/Stormix-dev/PBKDF2-Java" target="_blank">[link]</a>
+                                Implementazione dell'algoritmo in Java
+                            </li>
+                            <br>
+                            <li class="default">
+                                <strong>TF2 Map Scraper:</strong>
+                                <a href="https://github.com/Stormix-dev/TF2-Server-Dashboard-Rust" target="_blank">[link]</a>
+                                Scraper di immagini in Rust da Google, per dashboard interattiva per la gestione di un server Team Fortress 2
+                            </li>
+                            <br>
+                            <li class="default">
+                                <strong>Bookstore Anonimo:</strong>
+                                <a href="https://github.com/Stormix-dev/anonymous-bookstore" target="_blank">[link]</a>
+                                E-commerce privacy-oriented in Spring Boot
+                            </li>
+                            <br>
+                            <li class="default">
+                                <strong>Chat P2P:</strong>
+                                <a href="https://github.com/Stormix-dev/p2p_chat" target="_blank">[link]</a>
+                                Peer-to-peer chat in Tokio (Rust)
+                            </li>
+                            <br>
+                            <li class="default">
+                                <strong>Esercizi Codewars:</strong>
+                                <a href="https://github.com/Stormix-dev/Codewars" target="_blank">[link]</a>
+                                Raccolta di esercizi svolti sulla piattaforma Codewars, in Java
+                            </li>
+                            <br>
+                            <hr>
+                            <br>
+                            <li class="default">
+                                <strong>Project Manager per Serie A Football Championship:</strong>
+                                Sistema gestionale in grado di fornire informazioni dettagliate sul campionato di serie A, completo di combinatorie per organizzare le partite e randomizzare i risultati
+                            </li>
+                            <br>
+                            <li class="default">
+                                <strong>Hackathon Project 2k19:</strong>
+                                Progettato - per la sanità - un orologio smart, dotato di porte speciali in grado di supportare gli anziani nell'assunzione dei farmaci. 2 ranked
+                            </li>
+                            <li class="default">
+                                <strong>Hackathon Project 2k18:</strong>
+                                Progettato un software destinato ai controlli di sicurezza nelle automobili: gestione tratto stradale, sensori di prossimità, ecc. 3 Ranked
+                            </li>
+                            <br>
+                            <li class="default">
+                                <strong>Algoritmo Dijkstra in Rust:</strong>
+                                Costo computazionale O(|E| + |V| log |V|)
+                            </li>
+                            <li class="default">
+                                <strong>Algoritmo eliminazione di Gauss in Rust</strong>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- Sezione 'Competenze' -->
+                    <section id="skills" class="section">
+                        <h2>⚙️ Competenze</h2>
+                        <h3>💻 Linguaggi di Programmazione</h3>
+                        <ul>
+                            <li>Java SE/EE v6+ ⭐⭐⭐⭐⭐</li>
+                            <li>Kotlin ⭐⭐⭐⭐</li>
+                            <li>Groovy ⭐⭐⭐⭐</li>
+                            <li>C, Rust ⭐⭐⭐⭐</li>
+                            <li>Python ⭐⭐⭐</li>
+                            <li>JavaScript ⭐⭐⭐</li>
+                            <li>HTML, CSS, LaTeX ⭐⭐⭐⭐</li>
+                            <li>Prolog ⭐⭐</li>
+                        </ul>
+                        <br><hr><br>
+                        <h3>🧰 Frameworks e Librerie</h3>
+                        <ul>
+                            <li>Spring (Boot, Data JPA, MVC, Security, Cloud Gateway)</li>
+                            <li>Liferay, Java Servlet, EJB, Swing, JavaFX, JSF</li>
+                            <li>RESTful, SOAP, JSON, XML, YAML</li>
+                        </ul>
+                        <br><hr><br>
+                        <h3>🖥️ Application Server & Tools</h3>
+                        <ul>
+                            <li>Apache Tomcat, WildFly</li>
+                            <li>Postman, Keycloak (SAML2, IdP), WSO2</li>
+                            <li>Docker, Kubernetes (Google Cloud), Jenkins (CI/CD), Microsoft Azure</li>
+                        </ul>
+                        <br><hr><br>
+                        <h3>🔧 Build, Versioning e Atlassian Tools</h3>
+                        <ul>
+                            <li>Maven, Gradle, GIT</li>
+                            <li>Jira, Confluence, Trello, Atlas, SourceTree</li>
+                        </ul>
+                        <br><hr><br>
+                        <h3>🔄 Automation & IBM Tools</h3>
+                        <ul>
+                            <li>RedHat PAM, IBM RTC, IBM DOORS</li>
+                        </ul>
+                        <br><hr><br>
+                        <h3>🛠️ Database e Data Management</h3>
+                        <ul>
+                            <li>PostgreSQL, OracleSQL, MySQL, MongoDB</li>
+                            <li>HeidiSQL, DBeaverSQL, GraphQL</li>
+                        </ul>
+                        <br><hr><br>
+                        <h3>🌐 Sistemi Operativi & Networking</h3>
+                        <ul>
+                            <li>Linux CLI (SSH, SFTP, gestione utenti/permessi)</li>
+                            <li>PuTTY, VMware vSphere Client</li>
+                        </ul>
+                        <br><hr><br>
+                        <h3>🧠 Software Design & Architettura</h3>
+                        <ul>
+                            <li>Progettazione di soluzioni modulari e scalabili</li>
+                            <li>Principi SOLID</li>
+                            <li>Pattern: MVC, Singleton, Adapter, Observer, Factory Method, DAO, DTO, RestController-Service-Repository</li>
+                        </ul>
+                    </section>
+                    <!-- Sezione 'Contatti' -->
+                    <section id="contact" class="section">
+                        <h2>📬 Contatti</h2>
+                        <p>
+                            📧
+                            <a href="mailto:gianmarco.simeoni.lsa@gmail.com">gianmarco.simeoni.lsa@gmail.com</a>
+                        </p>
+                        <p>
+                            💼
+                            <a href="https://www.linkedin.com/in/gianmarco-simeoni-software-developer-engineer/" target="_blank">LinkedIn</a>
+                        </p>
+                        <p>
+                            🐱
+                            <a href="https://github.com/Stormix-dev" target="_blank">GitHub</a>
+                        </p>
+                    </section>
+                </main>
+                <footer class="footer">
+                    <p>&copy; 2025 Gianmarco Simeoni. Tutti i diritti riservati. | Made with 💙 HTML/CSS & JavaScript</p>
+                </footer>
+            </div>
+        </body>
+        <!-- SCRIPT AREA -->
+        <script>
+    const navLinks = document.querySelectorAll(".nav a");
+    const sections = document.querySelectorAll(".section");
+  
+    // Nasconde tutte le sezioni
+    function hideAllSections() {
+      sections.forEach(section => {
+        section.style.display = "none";
+      });
+    }
+  
+    // Mostra la sezione selezionata
+    function showSection(id) {
+      hideAllSections();
+      const sectionToShow = document.getElementById(id);
+      if (sectionToShow) {
+        sectionToShow.style.display = "block";
+        sectionToShow.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  
+    // Imposta gli event listener
+    navLinks.forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+  
+        // Rimuovi "active" da tutti i link
+        navLinks.forEach(l => l.classList.remove("active"));
+        // Aggiungi "active" al link cliccato
+        link.classList.add("active");
+  
+        const targetId = link.getAttribute("href").substring(1);
+        showSection(targetId);
+      });
+    });
+  
+    // All'avvio mostra solo la prima sezione
+    hideAllSections();
+    document.getElementById("about").style.display = "block";
+    navLinks[0].classList.add("active");
+        </script>
+    </html>
