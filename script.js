@@ -18,7 +18,7 @@ function showSection(id) {
     const sectionToShow = document.getElementById(id);
     if (sectionToShow) {
         sectionToShow.style.display = "block";
-        sectionToShow.scrollIntoView({ behavior: 'smooth' });
+        //sectionToShow.scrollIntoView({ behavior: 'smooth' });
     }
 }
 
