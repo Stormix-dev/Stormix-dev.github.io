@@ -10,11 +10,9 @@
     </head>
     <body>
         <div class="container">
-            <aside class="sidebar">
+            <div class="titleWrapper">
                 <div class="profile">
-                    <img src="img/foto_profilo.jpg" alt="Foto Profilo">
-                    <h2>Gianmarco Simeoni</h2>
-                    <p>Sviluppatore Back-End</p>
+                    <h2>Stormix-dev's Github Page</h2>
                 </div>
                 <nav class="nav">
                     <a href="#about">
@@ -34,13 +32,18 @@
                         Contatti
                     </a>
                 </nav>
-            </aside>
+            </div>
             <div class="wrapper">
                 <main class="main-content">
                     <!-- Sezione 'Chi sono' -->
                     <section id="about" class="section">
-                        <h1>👋 Ciao!</h1>
-                        <p>Mi chiamo Gianmarco, sono uno sviluppatore back-end con passione per sistemi robusti, prestazioni e sicurezza. Amo costruire soluzioni scalabili, testabili e ben strutturate.</p>
+                        <div class="whoAmI">
+                            <div>
+                                <h1>👋 Ciao!</h1>
+                                <p>Mi chiamo Gianmarco, sono uno sviluppatore back-end con passione per sistemi robusti, prestazioni e sicurezza. Amo costruire soluzioni scalabili, testabili e ben strutturate.</p>
+                            </div>
+                            <img src="img/foto_profilo.jpg"/>
+                        </div>
                         <br>
                         <hr>
                         <br>
@@ -119,98 +122,96 @@
                         <h2>🚀 Progetti</h2>
                         <h3>🔗 Progetti su GitHub</h3>
                         <br>
-                        <div class="project-card">
-                            <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 Rust Project Image">
-                            <div class="project-info">
-                                <h3>PBKDF2-Rust</h3>
-                                <p>Implementazione ultra-performante in Rust.</p>
-                                <a href="https://github.com/Stormix-dev/PBKDF2-Rust" target="_blank">[GitHub]</a>
+                        <div class="projects">
+                            <div class="project-card">
+                                <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 Rust Project Image">
+                                <div class="project-info">
+                                    <h3>PBKDF2-Rust</h3>
+                                    <p>Implementazione ultra-performante in Rust.</p>
+                                    <a href="https://github.com/Stormix-dev/PBKDF2-Rust" target="_blank">[GitHub]</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 C# Project Image">
-                            <div class="project-info">
-                                <h3>PBKDF2-C#</h3>
-                                <p>Implementazione dell'algoritmo in C#.</p>
-                                <a href="https://github.com/Stormix-dev/PBKDF2-CSharp" target="_blank">[GitHub]</a>
+                            <div class="project-card">
+                                <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 C# Project Image">
+                                <div class="project-info">
+                                    <h3>PBKDF2-C#</h3>
+                                    <p>Implementazione dell'algoritmo in C#.</p>
+                                    <a href="https://github.com/Stormix-dev/PBKDF2-CSharp" target="_blank">[GitHub]</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 Java Project Image">
-                            <div class="project-info">
-                                <h3>PBKDF2-Java</h3>
-                                <p>Implementazione dell'algoritmo in Java.</p>
-                                <a href="https://github.com/Stormix-dev/PBKDF2-Java" target="_blank">[GitHub]</a>
+                            <div class="project-card">
+                                <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 Java Project Image">
+                                <div class="project-info">
+                                    <h3>PBKDF2-Java</h3>
+                                    <p>Implementazione dell'algoritmo in Java.</p>
+                                    <a href="https://github.com/Stormix-dev/PBKDF2-Java" target="_blank">[GitHub]</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/tf2.png" alt="TF2 Map Scraper Project Image">
-                            <div class="project-info">
-                                <h3>[PRIVATE] TF2 Map Scraper</h3>
-                                <p>Scraper di immagini in Rust da Google, per dashboard interattiva per la gestione di un server Team Fortress 2</p>
-                                <a href="https://github.com/Stormix-dev/TF2-Server-Dashboard-Rust" target="_blank">[GitHub]</a>
+                            <div class="project-card">
+                                <img src="img/projects/tf2.png" alt="TF2 Map Scraper Project Image">
+                                <div class="project-info">
+                                    <h3>[PRIVATE] TF2 Map Scraper</h3>
+                                    <p>Scraper di immagini in Rust da Google, per dashboard interattiva per la gestione di un server Team Fortress 2</p>
+                                    <a href="https://github.com/Stormix-dev/TF2-Server-Dashboard-Rust" target="_blank">[GitHub]</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/bookstore.jpg" alt="Anonymous Bookstore Project Image">
-                            <div class="project-info">
-                                <h3>[PRIVATE] Bookstore Anonimo</h3>
-                                <p>E-commerce privacy-oriented in Spring Boot</p>
-                                <a href="https://github.com/Stormix-dev/anonymous-bookstore" target="_blank">[GitHub]</a>
+                            <div class="project-card">
+                                <img src="img/projects/bookstore.jpg" alt="Anonymous Bookstore Project Image">
+                                <div class="project-info">
+                                    <h3>[PRIVATE] Bookstore Anonimo</h3>
+                                    <p>E-commerce privacy-oriented in Spring Boot</p>
+                                    <a href="https://github.com/Stormix-dev/anonymous-bookstore" target="_blank">[GitHub]</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/p2prust.jpg" alt="Chat P2P Project Image">
-                            <div class="project-info">
-                                <h3>Chat P2P</h3>
-                                <p>Peer-to-peer chat in Tokio (Rust)</p>
-                                <a href="https://github.com/Stormix-dev/p2p_chat" target="_blank">[GitHub]</a>
+                            <div class="project-card">
+                                <img src="img/projects/p2prust.jpg" alt="Chat P2P Project Image">
+                                <div class="project-info">
+                                    <h3>Chat P2P</h3>
+                                    <p>Peer-to-peer chat in Tokio (Rust)</p>
+                                    <a href="https://github.com/Stormix-dev/p2p_chat" target="_blank">[GitHub]</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/codewars.jpg" alt="Codewars Project Image">
-                            <div class="project-info">
-                                <h3>Esercizi Codewars</h3>
-                                <p>Raccolta di esercizi svolti sulla piattaforma Codewars, principalmente in Java</p>
-                                <a href="https://github.com/Stormix-dev/Codewars" target="_blank">[GitHub]</a>
+                            <div class="project-card">
+                                <img src="img/projects/codewars.jpg" alt="Codewars Project Image">
+                                <div class="project-info">
+                                    <h3>Esercizi Codewars</h3>
+                                    <p>Raccolta di esercizi svolti sulla piattaforma Codewars, principalmente in Java</p>
+                                    <a href="https://github.com/Stormix-dev/Codewars" target="_blank">[GitHub]</a>
+                                </div>
                             </div>
-                        </div>
-                        <br>
-                        <hr>
-                        <br>
-                        <br>
-                        <div class="project-card">
-                            <img src="img/projects/project_football.jpg" alt="Football Championship Project Image">
-                            <div class="project-info">
-                                <h3>Project Manager per Serie A Football Championship</h3>
-                                <p>Sistema gestionale in grado di fornire informazioni dettagliate sul campionato di serie A, completo di combinatorie per organizzare le partite e randomizzare i risultati</p>
+                            <div class="project-card">
+                                <img src="img/projects/project_football.jpg" alt="Football Championship Project Image">
+                                <div class="project-info">
+                                    <h3>Project Manager per Serie A Football Championship</h3>
+                                    <p>Sistema gestionale in grado di fornire informazioni dettagliate sul campionato di serie A, completo di combinatorie per organizzare le partite e randomizzare i risultati</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/hackathon 2019.png" alt="Hackathon Project 2k19 Championship Project Image">
-                            <div class="project-info">
-                                <h3>Hackathon Project 2k19</h3>
-                                <p>Progettato - per la sanità - un orologio smart, dotato di porte speciali in grado di supportare gli anziani nell'assunzione dei farmaci. 2 ranked</p>
+                            <div class="project-card">
+                                <img src="img/projects/hackathon 2019.png" alt="Hackathon Project 2k19 Championship Project Image">
+                                <div class="project-info">
+                                    <h3>Hackathon Project 2k19</h3>
+                                    <p>Progettato - per la sanità - un orologio smart, dotato di porte speciali in grado di supportare gli anziani nell'assunzione dei farmaci. 2 ranked</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/hackathon 2018.png" alt="Hackathon Project 2k18 Championship Project Image">
-                            <div class="project-info">
-                                <h3>Hackathon Project 2k18</h3>
-                                <p>Progettato un software destinato ai controlli di sicurezza nelle automobili: gestione tratto stradale, sensori di prossimità, ecc. 3 Ranked</p>
+                            <div class="project-card">
+                                <img src="img/projects/hackathon 2018.png" alt="Hackathon Project 2k18 Championship Project Image">
+                                <div class="project-info">
+                                    <h3>Hackathon Project 2k18</h3>
+                                    <p>Progettato un software destinato ai controlli di sicurezza nelle automobili: gestione tratto stradale, sensori di prossimità, ecc. 3 Ranked</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/dijkstra.png" alt="Dijkstra Algorithm Project Image">
-                            <div class="project-info">
-                                <h3>Algoritmo Dijkstra in Rust</h3>
-                                <p>Costo computazionale O(|E| + |V| log |V|)</p>
+                            <div class="project-card">
+                                <img src="img/projects/dijkstra.png" alt="Dijkstra Algorithm Project Image">
+                                <div class="project-info">
+                                    <h3>Algoritmo Dijkstra in Rust</h3>
+                                    <p>Costo computazionale O(|E| + |V| log |V|)</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="img/projects/eliminazione_gauss.png" alt="Eliminazione Di Gauss Project Image">
-                            <div class="project-info">
-                                <h3>Algoritmo eliminazione di Gauss in Rust</h3>
+                            <div class="project-card">
+                                <img src="img/projects/eliminazione_gauss.png" alt="Eliminazione Di Gauss Project Image">
+                                <div class="project-info">
+                                    <h3>Algoritmo eliminazione di Gauss in Rust</h3>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -290,18 +291,17 @@
                     <!-- Sezione 'Contatti' -->
                     <section id="contact" class="section">
                         <h2>📬 Contatti</h2>
-                        <p>
-                            📧
-                            <a href="mailto:gianmarco.simeoni.lsa@gmail.com">gianmarco.simeoni.lsa@gmail.com</a>
-                        </p>
-                        <p>
-                            💼
-                            <a href="https://www.linkedin.com/in/gianmarco-simeoni-software-developer-engineer/" target="_blank">LinkedIn</a>
-                        </p>
-                        <p>
-                            🐱
-                            <a href="https://github.com/Stormix-dev" target="_blank">GitHub</a>
-                        </p>
+                        <div style="display: flex;justify-content: center;align-items: center;">
+                            <p>
+                                <a href="mailto:gianmarco.simeoni.lsa@gmail.com"><img src="img/mailto.png" /></a>
+                            </p>
+                            <p>
+                                <a href="https://www.linkedin.com/in/gianmarco-simeoni-software-developer-engineer/" target="_blank"><img src="img/linkedin.avif" ></a>
+                            </p>
+                            <p>
+                                <a href="https://github.com/Stormix-dev" target="_blank"><img src="img/github.jpg" ></a>
+                            </p>
+                        </div>
                     </section>
                 </main>
                 <footer class="footer">
