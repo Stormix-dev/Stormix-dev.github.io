@@ -122,7 +122,7 @@
                         <h2>🚀 Progetti</h2>
                         <h3>🔗 Progetti su GitHub</h3>
                         <br>
-                        <div class="projects">
+                        <div class="projects-grid">
                             <div class="project-card">
                                 <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 Rust Project Image">
                                 <div class="project-info">
@@ -218,75 +218,97 @@
                     <!-- Sezione 'Competenze' -->
                     <section id="skills" class="section">
                         <h2>⚙️ Competenze</h2>
-                        <h3>💻 Linguaggi di Programmazione</h3>
-                        <ul>
-                            <li>Java SE/EE v6+ ⭐⭐⭐⭐⭐</li>
-                            <li>Kotlin ⭐⭐⭐⭐</li>
-                            <li>Groovy ⭐⭐⭐⭐</li>
-                            <li>C, Rust ⭐⭐⭐⭐</li>
-                            <li>Python ⭐⭐⭐</li>
-                            <li>JavaScript ⭐⭐⭐</li>
-                            <li>HTML, CSS, LaTeX ⭐⭐⭐⭐</li>
-                            <li>Prolog ⭐⭐</li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>🧰 Frameworks e Librerie</h3>
-                        <ul>
-                            <li>Spring (Boot, Data JPA, MVC, Security, Cloud Gateway)</li>
-                            <li>Liferay, Java Servlet, EJB, Swing, JavaFX, JSF</li>
-                            <li>RESTful, SOAP, JSON, XML, YAML</li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>🖥️ Application Server & Tools</h3>
-                        <ul>
-                            <li>Apache Tomcat, WildFly</li>
-                            <li>Postman, Keycloak (SAML2, IdP), WSO2</li>
-                            <li>Docker, Kubernetes (Google Cloud), Jenkins (CI/CD), Microsoft Azure</li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>🔧 Build, Versioning e Atlassian Tools</h3>
-                        <ul>
-                            <li>Maven, Gradle, GIT</li>
-                            <li>Jira, Confluence, Trello, Atlas, SourceTree</li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>🔄 Automation & IBM Tools</h3>
-                        <ul>
-                            <li>RedHat PAM, IBM RTC, IBM DOORS</li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>🛠️ Database e Data Management</h3>
-                        <ul>
-                            <li>PostgreSQL, OracleSQL, MySQL, MongoDB</li>
-                            <li>HeidiSQL, DBeaverSQL, GraphQL</li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>🌐 Sistemi Operativi & Networking</h3>
-                        <ul>
-                            <li>Linux CLI (SSH, SFTP, gestione utenti/permessi)</li>
-                            <li>PuTTY, VMware vSphere Client</li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>🧠 Software Design & Architettura</h3>
-                        <ul>
-                            <li>Progettazione di soluzioni modulari e scalabili</li>
-                            <li>Principi SOLID</li>
-                            <li>Pattern: MVC, Singleton, Adapter, Observer, Factory Method, DAO, DTO, RestController-Service-Repository</li>
-                        </ul>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h3>💻 Linguaggi di Programmazione</h3>
+                                <div class="skill">
+                                    <span>Java SE/EE v6+</span>
+                                    <div class="bar">
+                                        <div class="level" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Kotlin</span>
+                                    <div class="bar"><div class="level" style="width: 80%;"></div></div>
+                                </div>
+                                <div class="skill">
+                                    <span>Groovy</span>
+                                    <div class="bar"><div class="level" style="width: 80%;"></div></div>
+                                </div>
+                                <div class="skill">
+                                    <span>C, Rust</span>
+                                    <div class="bar"><div class="level" style="width: 80%;"></div></div>
+                                </div>
+                                <div class="skill">
+                                    <span>Python</span>
+                                    <div class="bar"><div class="level" style="width: 60%;"></div></div>
+                                </div>
+                                <div class="skill">
+                                    <span>JavaScript</span>
+                                    <div class="bar"><div class="level" style="width: 60%;"></div></div>
+                                </div>
+                                <div class="skill">
+                                    <span>HTML, CSS, LaTeX</span>
+                                    <div class="bar"><div class="level" style="width: 80%;"></div></div>
+                                </div>
+                                <div class="skill">
+                                    <span>Prolog</span>
+                                    <div class="bar"><div class="level" style="width: 40%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <h3>🧰 Frameworks e Librerie</h3>
+                                <ul>
+                                    <li>Spring (Boot, Data JPA, MVC, Security, Cloud Gateway)</li>
+                                    <li>Liferay, Java Servlet, EJB, Swing, JavaFX, JSF</li>
+                                    <li>RESTful, SOAP, JSON, XML, YAML</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card">
+                                <h3>🖥️ Application Server & Tools</h3>
+                                <ul>
+                                    <li>Apache Tomcat, WildFly</li>
+                                    <li>Postman, Keycloak (SAML2, IdP), WSO2</li>
+                                    <li>Docker, Kubernetes (Google Cloud), Jenkins (CI/CD), Microsoft Azure</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card">
+                                <h3>🔧 Build, Versioning e Atlassian Tools</h3>
+                                <ul>
+                                    <li>Maven, Gradle, GIT</li>
+                                    <li>Jira, Confluence, Trello, Atlas, SourceTree</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card">
+                                <h3>🔄 Automation & IBM Tools</h3>
+                                <ul>
+                                    <li>RedHat PAM, IBM RTC, IBM DOORS</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card">
+                                <h3>🛠️ Database e Data Management</h3>
+                                <ul>
+                                    <li>PostgreSQL, OracleSQL, MySQL, MongoDB</li>
+                                    <li>HeidiSQL, DBeaverSQL, GraphQL</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card">
+                                <h3>🌐 Sistemi Operativi & Networking</h3>
+                                <ul>
+                                    <li>Linux CLI (SSH, SFTP, gestione utenti/permessi)</li>
+                                    <li>PuTTY, VMware vSphere Client</li>
+                                </ul>
+                            </div>
+                            <div class="skill-card">
+                                <h3>🧠 Software Design & Architettura</h3>
+                                <ul>
+                                    <li>Progettazione di soluzioni modulari e scalabili</li>
+                                    <li>Principi SOLID</li>
+                                    <li>Pattern: MVC, Singleton, Adapter, Observer, Factory Method, DAO, DTO, RestController-Service-Repository</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
                     </section>
                     <!-- Sezione 'Contatti' -->
                     <section id="contact" class="section">
