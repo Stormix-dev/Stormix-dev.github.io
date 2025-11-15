@@ -1,43 +1,64 @@
-// script.js
+// =========================
+// Robust Theme Toggle con FontAwesome e fallback
+// =========================
+(function () {
+    function initThemeToggle() {
+        const html = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle') || document.querySelector('.theme-toggle');
+        if (!themeToggle) return console.warn('Theme toggle non trovato');
 
-document.getElementById("current-year").textContent = new Date().getFullYear();
+        // Crea icona FontAwesome se non esiste
+        let faIcon = themeToggle.querySelector('i');
+        if (!faIcon) {
+            faIcon = document.createElement('i');
+            themeToggle.prepend(faIcon);
+        }
 
-const navLinks = document.querySelectorAll(".nav a");
-const sections = document.querySelectorAll(".section");
+        // Crea fallback testuale se non esiste
+        let fallback = themeToggle.querySelector('.theme-fallback');
+        if (!fallback) {
+            fallback = document.createElement('span');
+            fallback.className = 'theme-fallback';
+            fallback.setAttribute('aria-hidden', 'true');
+            fallback.style.marginLeft = '0.15rem';
+            themeToggle.appendChild(fallback);
+        }
 
-// Nasconde tutte le sezioni
-function hideAllSections() {
-    sections.forEach(section => {
-        section.style.display = "none";
-    });
-}
+        // Leggi tema salvato o fallback a 'dark'
+        const saved = localStorage.getItem('theme');
+        const initialTheme = saved === 'light' || saved === 'dark' ? saved : 'dark';
+        html.setAttribute('data-theme', initialTheme);
 
-// Mostra la sezione selezionata
-function showSection(id) {
-    hideAllSections();
-    const sectionToShow = document.getElementById(id);
-    if (sectionToShow) {
-        sectionToShow.style.display = "block";
-        //sectionToShow.scrollIntoView({ behavior: 'smooth' });
+        // Funzione per aggiornare UI
+        function updateUI(theme) {
+            html.setAttribute('data-theme', theme);
+            
+            // Aggiorna icona FontAwesome
+            faIcon.className = '';
+            faIcon.classList.add('fas', theme === 'dark' ? 'fa-moon' : 'fa-sun');
+
+            // Aggiorna fallback testuale
+            fallback.textContent = theme === 'dark' ? '☾' : '☀';
+
+            // Aggiorna aria-label
+            themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Tema scuro. Clicca per tema chiaro' : 'Tema chiaro. Clicca per tema scuro');
+        }
+
+        // Inizializza UI
+        updateUI(initialTheme);
+
+        // Click toggle
+        themeToggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+            const next = current === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', next);
+            updateUI(next);
+        });
     }
-}
 
-// Imposta gli event listener
-navLinks.forEach(link => {
-    link.addEventListener("click", e => {
-        e.preventDefault();
-
-        // Rimuovi "active" da tutti i link
-        navLinks.forEach(l => l.classList.remove("active"));
-        // Aggiungi "active" al link cliccato
-        link.classList.add("active");
-
-        const targetId = link.getAttribute("href").substring(1);
-        showSection(targetId);
-    });
-});
-
-// All'avvio mostra solo la prima sezione
-hideAllSections();
-document.getElementById("about").style.display = "block";
-navLinks[0].classList.add("active");
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initThemeToggle);
+    } else {
+        initThemeToggle();
+    }
+})();

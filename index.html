@@ -1,368 +1,607 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gianmarco Simeoni - Portfolio</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/a2e0e6ad84.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="titleWrapper">
-                <div class="profile">
-                    <h2>Stormix-dev's Github Page</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianmarco Simeoni - Backend Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="greeting">Ciao, sono</span>
+                <h1 class="name">Gianmarco Simeoni</h1>
+                <h2 class="title">Backend Developer <span class="cursor">|</span></h2>
+                <p class="subtitle">Costruisco sistemi robusti, scalabili e performanti con passione per l'architettura software e la sicurezza.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> Vedi Progetti
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contattami
+                    </a>
                 </div>
-                <nav class="nav">
-                    <a href="#about">
-                        <i class="fas fa-user"></i>
-                        Chi sono
+                <div class="social-links">
+                    <a href="https://github.com/Stormix-dev" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
                     </a>
-                    <a href="#projects">
-                        <i class="fas fa-code"></i>
-                        Progetti
+                    <a href="https://www.linkedin.com/in/gianmarco-simeoni-software-developer-engineer/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="#skills">
-                        <i class="fas fa-tools"></i>
-                        Competenze
-                    </a>
-                    <a href="#contact">
+                    <a href="/cdn-cgi/l/email-protection#80e7e9e1eeede1f2e3efaef3e9ede5efeee9aeecf3e1c0e7ede1e9ecaee3efed" aria-label="Email">
                         <i class="fas fa-envelope"></i>
-                        Contatti
                     </a>
-                </nav>
+                </div>
             </div>
-            <div class="wrapper">
-                <main class="main-content">
-                    <!-- Sezione 'Chi sono' -->
-                    <section id="about" class="section">
-                        <div class="whoAmI">
-                            <div>
-                                <h1>👋 Ciao!</h1>
-                                <p>Mi chiamo Gianmarco, sono uno sviluppatore back-end con passione per sistemi robusti, prestazioni e sicurezza. Amo costruire soluzioni scalabili, testabili e ben strutturate.</p>
-                            </div>
-                            <img src="img/foto_profilo.jpg"/>
-                        </div>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>🎓 Formazione</h3>
-                        <ul>
-                            <li>
-                                <strong>Laurea in Ingegneria Informatica</strong>
-                                – Università degli Studi delle Camere di Commercio Italiane (2022-2025)
-                            </li>
-                            <li>
-                                <strong>Diploma Liceo Scientifico, opzione Scienze Applicate</strong>
-                                – I.T.I.S. Stanislao Cannizzaro (2010-2016)
-                            </li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>💼 Esperienze</h3>
-                        <ul>
-                            <li class="default">
-                                <strong>Software Developer Specialist</strong>
-                                – Engineering Group (lug 2024 - Presente)
-                            </li>
-                            <li>
-                                <strong>Tutor di matematica e scienze</strong>
-                                – (2021 - Presente): Freelence, ho fornito tutoraggio privato in matematica e fisica, conducendo lezioni a distanza per gli studenti delle scuole superiori
-                            </li>
-                            <li class="default">
-                                <strong>Software Analyst</strong>
-                                – NAIS (feb 2024 - lug 2024)
-                                <ul>
-                                    <li class="custom">
-                                        Middle Java Standalone Dev presso
-                                        <strong>Techno Sky</strong>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="default">
-                                <strong>Atlassian Expert</strong>
-                                – SourceSense (nov 2022 - feb 2024)
-                            </li>
-                            <li class="default">
-                                <strong>Software Engineer</strong>
-                                – NTT Data (set 2022 - nov 2022)
-                            </li>
-                            <li class="default">
-                                <strong>Java Software Developer</strong>
-                                – Jdk S.r.l (giu 2021 - set 2022)
-                                <ul>
-                                    <li class="custom">
-                                        Atlassian Consultant presso
-                                        <strong>Sourcesense</strong>
-                                    </li>
-                                    <li class="custom">
-                                        Java Consultant presso
-                                        <strong>Accenture Italia</strong>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="default">
-                                <strong>Java Fullstack Developer</strong>
-                                – Exolab S.r.l (set 2020 - mag 2021)
-                            </li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <h3>💬 Su di me</h3>
-                        Amo esplorare nuovi linguaggi di programmazione, paradigmi software e pattern architetturali, mantenendo sempre aggiornate le mie competenze. Dedico parte del mio tempo allo studio di tecnologie emergenti, tra cui l'intelligenza artificiale e i sistemi distribuiti.
-                        Mi piace mettermi alla prova con sfide algoritmiche su piattaforme come Codewars, migliorando la mia capacità di problem solving e scrittura di codice ottimizzato. Sono convinto che l’apprendimento continuo sia essenziale per un software engineer e cerco di affinare costantemente le mie capacità tecniche.
-                        Oltre al mio interesse per l'informatica e l'ingegneria del software, dedico parte del mio tempo ad aiutare studenti delle scuole superiori con ripetizioni di matematica e fisica, trasmettendo loro non solo conoscenze, ma anche un metodo efficace per affrontare problemi complessi.
-                        La mia passione per l’espressione creativa si manifesta anche nella scrittura: ho pubblicato un libro di poesie su Amazon, dove esploro emozioni, esperienze e riflessioni personali attraverso versi che invitano alla scoperta e alla connessione. Puoi trovare il libro a questo link: <a href="https://www.amazon.it/Lungo-filo-una-nuvola-Gianmarco/dp/B0CB2FTMH8/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2RMRXJ94SOPIL&dib=eyJ2IjoiMSJ9.aUij_6Hhs-ZE9M1axgFVcEhKxdcct1znlm5I8EXmQ_4.7dT0yzfL2VWf6iAI4m65ietkZQ6TlKTsYiCqCsD4wRw&dib_tag=se&keywords=Lungo+il+filo+di+una+nuvola&qid=1746311737&sprefix=lungo+il+filo+di+una+nuvo%2Caps%2C126&sr=8-1" target="_blank">"Lungo il filo di una nuvola"</a>.
-                    </section>
-                    <!-- Sezione 'Progetti' -->
-                    <section id="projects" class="section">
-                        <h2>🚀 Progetti personali e non</h2>
-                        <br>
-                        <div class="projects-grid">
-                            <div class="project-card">
-                                <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 Rust Project Image">
-                                <div class="project-info">
-                                    <h3>PBKDF2-Rust</h3>
-                                    <p>Implementazione ultra-performante in Rust.</p>
-                                    <a href="https://github.com/Stormix-dev/PBKDF2-Rust" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 C# Project Image">
-                                <div class="project-info">
-                                    <h3>PBKDF2-C#</h3>
-                                    <p>Implementazione dell'algoritmo in C#.</p>
-                                    <a href="https://github.com/Stormix-dev/PBKDF2-CSharp" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/pbkdf2.jpg" alt="PBKDF2 Java Project Image">
-                                <div class="project-info">
-                                    <h3>PBKDF2-Java</h3>
-                                    <p>Implementazione dell'algoritmo in Java.</p>
-                                    <a href="https://github.com/Stormix-dev/PBKDF2-Java" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/tf2.png" alt="TF2 Map Scraper Project Image">
-                                <div class="project-info">
-                                    <h3>[PRIVATE] TF2 Map Scraper</h3>
-                                    <p>Scraper di immagini in Rust da Google, per dashboard interattiva per la gestione di un server Team Fortress 2</p>
-                                    <a href="https://github.com/Stormix-dev/TF2-Server-Dashboard-Rust" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/bookstore.jpg" alt="Anonymous Bookstore Project Image">
-                                <div class="project-info">
-                                    <h3>[PRIVATE] Bookstore Anonimo</h3>
-                                    <p>E-commerce privacy-oriented in Spring Boot</p>
-                                    <a href="https://github.com/Stormix-dev/anonymous-bookstore" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/p2prust.jpg" alt="Chat P2P Project Image">
-                                <div class="project-info">
-                                    <h3>Chat P2P</h3>
-                                    <p>Peer-to-peer chat in Tokio (Rust)</p>
-                                    <a href="https://github.com/Stormix-dev/p2p_chat" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/codewars.jpg" alt="Codewars Project Image">
-                                <div class="project-info">
-                                    <h3>Esercizi Codewars</h3>
-                                    <p>Raccolta di esercizi svolti sulla piattaforma Codewars, principalmente in Java</p>
-                                    <a href="https://github.com/Stormix-dev/Codewars" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/weather.jpg" alt="Weather Project Image">
-                                <div class="project-info">
-                                    <h3>Weather App</h3>
-                                    <p>App meteo che mostra il tempo attuale e le previsioni, utilizzando API pubbliche e responsive design.</p>
-                                    <a href="https://github.com/Stormix-dev/weather-app" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/project_football.jpg" alt="Football Championship Project Image">
-                                <div class="project-info">
-                                    <h3>Project Manager per Serie A Football Championship</h3>
-                                    <p>Sistema gestionale in grado di fornire informazioni dettagliate sul campionato di serie A, completo di combinatorie per organizzare le partite e randomizzare i risultati</p>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/hackathon 2019.png" alt="Hackathon Project 2k19 Championship Project Image">
-                                <div class="project-info">
-                                    <h3>Hackathon Project 2k19</h3>
-                                    <p>Progettato - per la sanità - un orologio smart, dotato di porte speciali in grado di supportare gli anziani nell'assunzione dei farmaci. 2 ranked</p>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/hackathon 2018.png" alt="Hackathon Project 2k18 Championship Project Image">
-                                <div class="project-info">
-                                    <h3>Hackathon Project 2k18</h3>
-                                    <p>Progettato un software destinato ai controlli di sicurezza nelle automobili: gestione tratto stradale, sensori di prossimità, ecc. 3 Ranked</p>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/dijkstra.png" alt="Dijkstra Algorithm Project Image">
-                                <div class="project-info">
-                                    <h3>Algoritmo Dijkstra in Rust</h3>
-                                    <p>Costo computazionale O(|E| + |V| log |V|)</p>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/eliminazione_gauss.png" alt="Eliminazione Di Gauss Project Image">
-                                <div class="project-info">
-                                    <h3>Algoritmo eliminazione di Gauss in Rust</h3>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/gk_chess_engine.png" alt="GK Chess Engine Project Image">
-                                <div class="project-info">
-                                    <h3>Motore scacchistico in Rust</h3>
-                                    <a href="https://github.com/Stormix-dev/gk_chess_engine" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/concatenative-interpreter-image.png" alt="Concatenative Interpreter Project Image">
-                                <div class="project-info">
-                                    <h3>Interprete per linguaggio concatenativo in C</h3>
-                                    <a href="https://github.com/Stormix-dev/concatenative-interpreter" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <img src="img/projects/connect-four-game.png" alt="Connect Four Game Project Image">
-                                <div class="project-info">
-                                    <h3>Gioco "Forza 4" in Java</h3>
-                                    <a href="https://github.com/Stormix-dev/connect-four-game" target="_blank">[GitHub]</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Sezione 'Competenze' -->
-                    <section id="skills" class="section">
-                        <h2>⚙️ Competenze</h2>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <h3>💻 Linguaggi di Programmazione</h3>
-                                <div class="skill">
-                                    <span>Java SE/EE v6+</span>
-                                    <div class="bar">
-                                        <div class="level" style="width: 95%;"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span>Kotlin</span>
-                                    <div class="bar"><div class="level" style="width: 80%;"></div></div>
-                                </div>
-                                <div class="skill">
-                                    <span>Groovy</span>
-                                    <div class="bar"><div class="level" style="width: 80%;"></div></div>
-                                </div>
-                                <div class="skill">
-                                    <span>C, Rust</span>
-                                    <div class="bar"><div class="level" style="width: 80%;"></div></div>
-                                </div>
-                                <div class="skill">
-                                    <span>Python</span>
-                                    <div class="bar"><div class="level" style="width: 60%;"></div></div>
-                                </div>
-                                <div class="skill">
-                                    <span>JavaScript</span>
-                                    <div class="bar"><div class="level" style="width: 60%;"></div></div>
-                                </div>
-                                <div class="skill">
-                                    <span>HTML, CSS, LaTeX</span>
-                                    <div class="bar"><div class="level" style="width: 80%;"></div></div>
-                                </div>
-                                <div class="skill">
-                                    <span>Prolog</span>
-                                    <div class="bar"><div class="level" style="width: 40%;"></div></div>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <h3>🧰 Frameworks e Librerie</h3>
-                                <ul>
-                                    <li class="default">Spring (Boot, Data JPA, MVC, Security, Cloud Gateway)</li>
-                                    <li class="default">Liferay, Java Servlet, EJB, Swing, JavaFX, JSF</li>
-                                    <li class="default">RESTful, SOAP, JSON, XML, YAML</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card">
-                                <h3>🖥️ Application Server & Tools</h3>
-                                <ul>
-                                    <li class="default">Apache Tomcat, WildFly</li>
-                                    <li class="default">Postman, Keycloak (SAML2, IdP), WSO2</li>
-                                    <li class="default">Docker, Kubernetes (Google Cloud), Jenkins (CI/CD), Microsoft Azure</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card">
-                                <h3>🔧 Build, Versioning e Atlassian Tools</h3>
-                                <ul>
-                                    <li class="default">Maven, Gradle, GIT</li>
-                                    <li class="default">Jira, Confluence, Trello, Atlas, SourceTree</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card">
-                                <h3>🔄 Automation & IBM Tools</h3>
-                                <ul>
-                                    <li class="default">RedHat PAM, IBM RTC, IBM DOORS</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card">
-                                <h3>🛠️ Database e Data Management</h3>
-                                <ul>
-                                    <li class="default">PostgreSQL, OracleSQL, MySQL, MongoDB</li>
-                                    <li class="default">HeidiSQL, DBeaverSQL, GraphQL</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card">
-                                <h3>🌐 Sistemi Operativi & Networking</h3>
-                                <ul>
-                                    <li class="default">Linux CLI (SSH, SFTP, gestione utenti/permessi)</li>
-                                    <li class="default">PuTTY, VMware vSphere Client</li>
-                                </ul>
-                            </div>
-                            <div class="skill-card">
-                                <h3>🧠 Software Design & Architettura</h3>
-                                <ul>
-                                    <li class="default">Progettazione di soluzioni modulari e scalabili</li>
-                                    <li class="default">Principi SOLID</li>
-                                    <li class="default">Pattern: MVC, Singleton, Adapter, Observer, Factory Method, DAO, DTO, RestController-Service-Repository</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                    </section>
-                    <!-- Sezione 'Contatti' -->
-                    <section id="contact" class="section">
-                        <h2>📬 Contatti</h2>
-                        <div style="display: flex;justify-content: center;align-items: center;">
-                            <p>
-                                <a href="mailto:gianmarco.simeoni.lsa@gmail.com"><img src="img/mailto.png" /></a>
-                            </p>
-                            <p>
-                                <a href="https://www.linkedin.com/in/gianmarco-simeoni-software-developer-engineer/" target="_blank"><img src="img/linkedin.avif" ></a>
-                            </p>
-                            <p>
-                                <a href="https://github.com/Stormix-dev" target="_blank"><img src="img/github.jpg" ></a>
-                            </p>
-                        </div>
-                    </section>
-                </main>
-                <footer class="footer">
-                    <p>
-                        &copy;
-                        <span id="current-year"></span>
-                        Gianmarco Simeoni. Tutti i diritti riservati. | Made with 💙 HTML/CSS & JavaScript
-                    </p>
-                </footer>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="card-glow"></div>
+                    <img src="img/foto_profilo.jpg" alt="Gianmarco Simeoni" class="profile-pic">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Disponibile per progetti</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="script.js"></script>
-    </body>
-</html>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">GS<span>.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">Chi sono</a></li>
+                <li><a href="#experience" class="nav-link">Esperienza</a></li>
+                <li><a href="#projects" class="nav-link">Progetti</a></li>
+                <li><a href="#skills" class="nav-link">Competenze</a></li>
+                <li><a href="#contact" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">01.</span>
+                    Chi sono
+                </h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Sono uno sviluppatore backend con una forte passione per la costruzione di <strong>sistemi robusti e scalabili</strong>. Mi piace affrontare problemi complessi e trovare soluzioni eleganti ed efficienti.</p>
+                        
+                        <p>La mia expertise include progettazione di architetture software, ottimizzazione delle prestazioni, e implementazione di soluzioni sicure. Credo fermamente nei principi SOLID e nelle best practices del software engineering.</p>
+
+                        <p>Oltre al mio lavoro come sviluppatore, dedico tempo all'apprendimento continuo di nuove tecnologie e paradigmi. Amo esplorare linguaggi come <strong>Rust</strong> e <strong>Kotlin</strong>, e mi appassiona il mondo dei sistemi distribuiti e dell'intelligenza artificiale.</p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Formazione</h4>
+                                    <p>Laurea in Ingegneria Informatica</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Esperienza</h4>
+                                    <p>4+ anni in sviluppo software</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <h4>Focus</h4>
+                                    <p>Backend, Performance, Security</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-extra">
+                        <div class="info-card">
+                            <h3><i class="fas fa-book"></i> Pubblicazioni</h3>
+                            <p>Ho pubblicato un libro di poesie su Amazon: <a href="https://www.amazon.it/Lungo-filo-una-nuvola-Gianmarco/dp/B0CB2FTMH8" target="_blank">"Lungo il filo di una nuvola"</a></p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-chalkboard-teacher"></i> Tutoring</h3>
+                            <p>Dal 2021 offro tutoraggio privato in matematica e fisica per studenti delle superiori</p>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-trophy"></i> Hackathon</h3>
+                            <p>Partecipazione a hackathon con progetti innovativi nel campo healthcare e automotive</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">02.</span>
+                    Esperienza Professionale
+                </h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Lug 2024 - Presente</span>
+                            <h3>Software Developer Specialist</h3>
+                            <h4>Engineering Group</h4>
+                            <p>Sviluppo di applicazioni enterprise con focus su performance e scalabilità</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Feb 2024 - Lug 2024</span>
+                            <h3>Software Analyst</h3>
+                            <h4>NAIS</h4>
+                            <p>Middle Java Standalone Developer presso Techno Sky</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Nov 2022 - Feb 2024</span>
+                            <h3>Atlassian Expert</h3>
+                            <h4>SourceSense</h4>
+                            <p>Consulenza e implementazione di soluzioni Atlassian</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Set 2022 - Nov 2022</span>
+                            <h3>Software Engineer</h3>
+                            <h4>NTT Data</h4>
+                            <p>Sviluppo enterprise software solutions</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Giu 2021 - Set 2022</span>
+                            <h3>Java Software Developer</h3>
+                            <h4>Jdk S.r.l</h4>
+                            <p>Consulente presso Sourcesense e Accenture Italia</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Set 2020 - Mag 2021</span>
+                            <h3>Java Fullstack Developer</h3>
+                            <h4>Exolab S.r.l</h4>
+                            <p>Sviluppo applicazioni full-stack</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">03.</span>
+                    Progetti in Evidenza
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card featured">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Stormix-dev/gk_chess_engine" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>GK Chess Engine</h3>
+                        <p>Motore scacchistico completo sviluppato in Rust, con algoritmi di ricerca avanzati e valutazione delle posizioni</p>
+                        <div class="project-tags">
+                            <span>Rust</span>
+                            <span>Algorithms</span>
+                            <span>Game Theory</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card featured">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Stormix-dev/PBKDF2-Rust" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>PBKDF2 Implementation</h3>
+                        <p>Implementazione ultra-performante dell'algoritmo PBKDF2 in Rust, C# e Java con focus su sicurezza e velocità</p>
+                        <div class="project-tags">
+                            <span>Rust</span>
+                            <span>Security</span>
+                            <span>Cryptography</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Stormix-dev/p2p_chat" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>P2P Chat</h3>
+                        <p>Sistema di chat peer-to-peer realizzato con Tokio in Rust per comunicazioni distribuite</p>
+                        <div class="project-tags">
+                            <span>Rust</span>
+                            <span>Tokio</span>
+                            <span>Networking</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Stormix-dev/concatenative-interpreter" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Concatenative Interpreter</h3>
+                        <p>Interprete per linguaggio concatenativo sviluppato in C, esplorando paradigmi di programmazione alternativi</p>
+                        <div class="project-tags">
+                            <span>C</span>
+                            <span>Compilers</span>
+                            <span>Languages</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Stormix-dev/anonymous-bookstore" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Anonymous Bookstore</h3>
+                        <p>E-commerce privacy-oriented sviluppato con Spring Boot, con focus su anonimato e sicurezza utente</p>
+                        <div class="project-tags">
+                            <span>Spring Boot</span>
+                            <span>Privacy</span>
+                            <span>E-commerce</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Stormix-dev/Codewars" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Codewars Solutions</h3>
+                        <p>Raccolta di soluzioni algoritmiche su Codewars, principalmente in Java, per problem solving avanzato</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Algorithms</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-projects">
+                    <a href="https://github.com/Stormix-dev" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-github"></i> Vedi Altri Progetti su GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">04.</span>
+                    Competenze Tecniche
+                </h2>
+                <div class="skills-container">
+                    <!-- Programming Languages -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Linguaggi di Programmazione</h3>
+                        <div class="skill-items-with-level">
+                            <div class="skill-item-level">
+                                <div class="skill-name">
+                                    <span class="skill-badge expert">Java SE/EE v6+</span>
+                                    <div class="skill-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="skill-name">
+                                    <span class="skill-badge advanced">Kotlin</span>
+                                    <div class="skill-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="skill-name">
+                                    <span class="skill-badge advanced">Groovy</span>
+                                    <div class="skill-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="skill-name">
+                                    <span class="skill-badge advanced">C, Rust</span>
+                                    <div class="skill-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="skill-name">
+                                    <span class="skill-badge advanced">HTML, CSS, LaTeX</span>
+                                    <div class="skill-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="skill-name">
+                                    <span class="skill-badge intermediate">Python</span>
+                                    <div class="skill-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="skill-name">
+                                    <span class="skill-badge intermediate">JavaScript</span>
+                                    <div class="skill-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="skill-name">
+                                    <span class="skill-badge beginner">Prolog</span>
+                                    <div class="skill-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Java Frameworks & Tools -->
+                    <div class="skill-category">
+                        <h3><i class="fab fa-java"></i> Java Frameworks & Ecosistema</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge expert">Spring Boot</div>
+                            <div class="skill-badge expert">Spring Data JPA</div>
+                            <div class="skill-badge expert">Spring Security</div>
+                            <div class="skill-badge expert">Spring MVC</div>
+                            <div class="skill-badge advanced">Spring Cloud Gateway</div>
+                            <div class="skill-badge advanced">Hibernate JPA</div>
+                            <div class="skill-badge advanced">myBatis</div>
+                            <div class="skill-badge intermediate">Liferay</div>
+                            <div class="skill-badge intermediate">Java Servlet</div>
+                            <div class="skill-badge intermediate">EJB</div>
+                            <div class="skill-badge intermediate">Swing</div>
+                            <div class="skill-badge intermediate">JavaFX</div>
+                            <div class="skill-badge intermediate">JSF</div>
+                        </div>
+                    </div>
+
+                    <!-- Web & API -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-globe"></i> Web & API</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge expert">RESTful APIs</div>
+                            <div class="skill-badge expert">JSON</div>
+                            <div class="skill-badge expert">XML</div>
+                            <div class="skill-badge expert">YAML</div>
+                            <div class="skill-badge advanced">SOAP</div>
+                            <div class="skill-badge advanced">Postman</div>
+                            <div class="skill-badge intermediate">GraphQL</div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Database & Persistence</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge expert">PostgreSQL</div>
+                            <div class="skill-badge expert">MySQL</div>
+                            <div class="skill-badge expert">OracleSQL</div>
+                            <div class="skill-badge expert">HeidiSQL</div>
+                            <div class="skill-badge expert">DBeaver</div>
+                            <div class="skill-badge intermediate">MongoDB</div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Cloud -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cloud"></i> DevOps, Cloud & CI/CD</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge expert">Git</div>
+                            <div class="skill-badge expert">Maven</div>
+                            <div class="skill-badge expert">Gradle</div>
+                            <div class="skill-badge expert">Docker</div>
+                            <div class="skill-badge advanced">Jenkins</div>
+                            <div class="skill-badge advanced">Kubernetes</div>
+                            <div class="skill-badge advanced">Google Cloud</div>
+                            <div class="skill-badge advanced">Microsoft Azure</div>
+                            <div class="skill-badge intermediate">Apache Tomcat</div>
+                            <div class="skill-badge intermediate">WildFly</div>
+                        </div>
+                    </div>
+
+                    <!-- Security -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-shield-alt"></i> Security & Identity</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge expert">Keycloak</div>
+                            <div class="skill-badge expert">SAML2</div>
+                            <div class="skill-badge expert">SonarQube</div>
+                            <div class="skill-badge advanced">WSO2</div>
+                            <div class="skill-badge advanced">Burp Suite</div>
+                            <div class="skill-badge intermediate">Penetration Testing</div>
+                            <div class="skill-badge intermediate">Kali Linux</div>
+                        </div>
+                    </div>
+
+                    <!-- System & Networking -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> OS & Networking</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge expert">Linux CLI</div>
+                            <div class="skill-badge expert">SSH/SFTP/FTP</div>
+                            <div class="skill-badge advanced">PuTTY</div>
+                            <div class="skill-badge advanced">VMware vSphere</div>
+                            <div class="skill-badge intermediate">Oracle VirtualBox</div>
+                        </div>
+                    </div>
+
+                    <!-- Atlassian & Project Management -->
+                    <div class="skill-category">
+                        <h3><i class="fab fa-atlassian"></i> Atlassian & PM Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-badge expert">Jira</div>
+                            <div class="skill-badge expert">Confluence</div>
+                            <div class="skill-badge expert">SourceTree</div>
+                            <div class="skill-badge advanced">Trello</div>
+                            <div class="skill-badge advanced">Atlas</div>
+                            <div class="skill-badge intermediate">IBM RTC</div>
+                            <div class="skill-badge intermediate">IBM DOORS</div>
+                            <div class="skill-badge intermediate">RedHat PAM</div>
+                        </div>
+                    </div>
+
+                    <!-- Software Design & Architecture -->
+                    <div class="skill-category full-width">
+                        <h3><i class="fas fa-drafting-compass"></i> Software Design & Architettura</h3>
+                        <div class="architecture-grid">
+                            <div class="architecture-item">
+                                <h4>Principi</h4>
+                                <ul>
+                                    <li>SOLID Principles</li>
+                                    <li>Clean Architecture</li>
+                                    <li>Domain-Driven Design</li>
+                                    <li>Microservices Architecture</li>
+                                </ul>
+                            </div>
+                            <div class="architecture-item">
+                                <h4>Design Patterns</h4>
+                                <ul>
+                                    <li>MVC (Model-View-Controller)</li>
+                                    <li>Singleton Pattern</li>
+                                    <li>Factory Method</li>
+                                    <li>Observer Pattern</li>
+                                    <li>Adapter Pattern</li>
+                                </ul>
+                            </div>
+                            <div class="architecture-item">
+                                <h4>Enterprise Patterns</h4>
+                                <ul>
+                                    <li>DAO (Data Access Object)</li>
+                                    <li>DTO (Data Transfer Object)</li>
+                                    <li>Repository Pattern</li>
+                                    <li>Service Layer Pattern</li>
+                                    <li>RestController-Service-Repository</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <h2 class="section-title">
+                    <span class="title-number">05.</span>
+                    Mettiamoci in Contatto
+                </h2>
+                <div class="contact-content">
+                    <p class="contact-text">Sono sempre interessato a nuove opportunità e collaborazioni. Che tu abbia una domanda o voglia semplicemente salutare, sarò felice di risponderti!</p>
+                    <a href="/cdn-cgi/l/email-protection#8fe8e6eee1e2eefdece0a1fce6e2eae0e1e6a1e3fceecfe8e2eee6e3a1ece0e2" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Scrivimi
+                    </a>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="/cdn-cgi/l/email-protection#8deae4ece3e0ecffeee2a3fee4e0e8e2e3e4a3e1feeccdeae0ece4e1a3eee2e0"><span class="__cf_email__" data-cfemail="4e29272f20232f3c2d21603d27232b21202760223d2f0e29232f2722602d2123">[email&#160;protected]</span></a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/gianmarco-simeoni-software-developer-engineer/" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Stormix-dev" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & Built by Gianmarco Simeoni</
