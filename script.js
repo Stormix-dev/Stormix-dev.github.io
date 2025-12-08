@@ -1,11 +1,12 @@
 // =========================
-// Robust Theme Toggle con FontAwesome e fallback
+// Theme Toggle
 // =========================
 (function () {
     function initThemeToggle() {
         const html = document.documentElement;
         const themeToggle = document.getElementById('themeToggle') || document.querySelector('.theme-toggle');
-        if (!themeToggle) return console.warn('Theme toggle non trovato');
+        
+        if (!themeToggle) return;
 
         // Crea icona FontAwesome se non esiste
         let faIcon = themeToggle.querySelector('i');
@@ -27,6 +28,7 @@
         // Leggi tema salvato o fallback a 'dark'
         const saved = localStorage.getItem('theme');
         const initialTheme = saved === 'light' || saved === 'dark' ? saved : 'dark';
+        
         html.setAttribute('data-theme', initialTheme);
 
         // Funzione per aggiornare UI
@@ -49,8 +51,9 @@
 
         // Click toggle
         themeToggle.addEventListener('click', () => {
-            const current = html.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+            const current = html.getAttribute('data-theme');
             const next = current === 'dark' ? 'light' : 'dark';
+            
             localStorage.setItem('theme', next);
             updateUI(next);
         });
