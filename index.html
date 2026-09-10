@@ -3,700 +3,697 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gianmarco Simeoni - Backend Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <meta name="description" content="Gianmarco Simeoni — Software Engineer. Backend, Safety-Critical Systems, Symbolic AI @ Leonardo S.p.A.">
+    <meta name="keywords" content="software engineer, java, c++, backend, SAT solving, symbolic AI, ATM, air traffic management, rome, italy">
+    <meta name="author" content="Gianmarco Simeoni">
+    <title>Gianmarco Simeoni | Software Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230a0a0a'/%3E%3Ctext x='16' y='24' text-anchor='middle' font-family='monospace' font-size='22' font-weight='bold' fill='%233b82f6'%3EG%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <span class="greeting">Ciao, sono</span>
-                <h1 class="name">Gianmarco Simeoni</h1>
-                <h2 class="title">Backend Developer <span class="cursor">|</span></h2>
-                <p class="subtitle">Costruisco sistemi robusti, scalabili e performanti con passione per l'architettura software e la sicurezza.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-code"></i> Vedi Progetti
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Contattami
-                    </a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Stormix-dev" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/gianmarco-simeoni-software-developer-engineer/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:gianmarco.simeoni.LSA@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="card-glow"></div>
-                    <img src="img/foto_portfolio.jpg" alt="Gianmarco Simeoni" class="profile-pic">
-                    <div class="status-indicator">
-                        <span class="status-dot"></span>
-                        <span class="status-text">Disponibile per progetti</span>
-                    </div>
-                </div>
-            </div>
+
+    <!-- BACK TO TOP -->
+    <div class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="container nav-flex">
+            <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">./GS</a>
+            <nav>
+                <ul>
+                    <li><a href="#about" data-section="about">~/chi-sono</a></li>
+                    <li><a href="#education" data-section="education">~/formazione</a></li>
+                    <li><a href="#experience" data-section="experience">~/esperienza</a></li>
+                    <li><a href="#certs" data-section="certs">~/certificazioni</a></li>
+                    <li><a href="#projects" data-section="projects">~/progetti</a></li>
+                    <li><a href="#skills" data-section="skills">~/skills</a></li>
+                    <li><a href="#contact" data-section="contact">~/contatti</a></li>
+                    <li>
+                        <div class="nav-buttons">
+                            <button class="theme-btn" onclick="toggleTheme()" title="Change theme"><i class="fas fa-palette"></i></button>
+                            <button class="lang-btn" onclick="toggleLang()" id="langBtn" title="Switch language"><i class="fas fa-language"></i> IT</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="status-container">
+                <span class="hero-status" data-it="● SYSTEM STATUS: ONLINE" data-en="● SYSTEM STATUS: ONLINE">● SYSTEM STATUS: ONLINE</span>
+            </div>
+
+            <h1 id="hero-name" class="glitch-active" data-text="Gianmarco Simeoni">
+                <span id="typewriter"></span><span class="typing-cursor"></span>
+            </h1>
+
+            <div style="max-width: 750px; margin: 0 auto;">
+                <p class="hero-subtitle">Software Engineer</p>
+                <p class="hero-role-line" data-it="Leonardo S.p.A. — DATA AI &amp; ADVANCED ALGORITHMS" data-en="Leonardo S.p.A. — DATA AI &amp; ADVANCED ALGORITHMS">Leonardo S.p.A. — DATA AI &amp; ADVANCED ALGORITHMS</p>
+            </div>
+
+            <div class="hero-tags">
+                <span class="hero-tag">JAVA</span>
+                <span class="hero-tag">C++</span>
+                <span class="hero-tag">RUST</span>
+                <span class="hero-tag">SAT / SYMBOLIC AI</span>
+                <span class="hero-tag">ATM SYSTEMS</span>
+                <span class="hero-tag">SPRING BOOT</span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#contact" class="btn"><span data-it="CONTATTAMI" data-en="GET IN TOUCH">CONTATTAMI</span> <i class="fas fa-terminal"></i></a>
+                <a href="/cv/Gianmarco_Simeoni_CV.pdf" download class="btn btn-outline"><span data-it="SCARICA CV" data-en="DOWNLOAD CV">SCARICA CV</span> <i class="fas fa-file-download"></i></a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/Stormix-dev" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gsimeoni-dev/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:gianmarco.simeoni.LSA@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </section>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">GS<span>.</span></a>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">Chi sono</a></li>
-                <li><a href="#experience" class="nav-link">Esperienza</a></li>
-                <li><a href="#projects" class="nav-link">Progetti</a></li>
-                <li><a href="#skills" class="nav-link">Competenze</a></li>
-                <li><a href="#contact" class="nav-link">Contatti</a></li>
-            </ul>
-            <div class="nav-right">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <!-- STATS BAR -->
+    <div class="container">
+        <div class="stats-bar reveal">
+            <div class="stat-item">
+                <div class="stat-number" data-count="5">0</div>
+                <div class="stat-label" data-it="ANNI ESPERIENZA" data-en="YEARS EXPERIENCE">ANNI ESPERIENZA</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="9">0</div>
+                <div class="stat-label" data-it="PROGETTI PERSONALI" data-en="PERSONAL PROJECTS">PROGETTI PERSONALI</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="6">0</div>
+                <div class="stat-label" data-it="LINGUAGGI" data-en="LANGUAGES">LINGUAGGI</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="7">0</div>
+                <div class="stat-label" data-it="AZIENDE" data-en="COMPANIES">AZIENDE</div>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">
-                    <span class="title-number">01.</span>
-                    Chi sono
-                </h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Sono uno sviluppatore backend con una forte passione per la costruzione di <strong>sistemi robusti e scalabili</strong>. Mi piace affrontare problemi complessi e trovare soluzioni eleganti ed efficienti.</p>
-                        
-                        <p>La mia expertise include progettazione di architetture software, ottimizzazione delle prestazioni, e implementazione di soluzioni sicure. Credo fermamente nei principi SOLID e nelle best practices del software engineering.</p>
+    <div class="container">
 
-                        <p>Oltre al mio lavoro come sviluppatore, dedico tempo all'apprendimento continuo di nuove tecnologie e paradigmi. Amo esplorare linguaggi come <strong>Rust</strong> e <strong>Kotlin</strong>, e mi appassiona il mondo dei sistemi distribuiti e dell'<strong>intelligenza artificiale</strong>, in particolare l'<strong>AI simbolica</strong> e l'automated reasoning (SAT solving, ottimizzazione combinatoria).</p>
-                        
-                        <div class="about-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <div>
-                                    <h4>Formazione</h4>
-                                    <p>Laurea in Ingegneria Informatica</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-briefcase"></i>
-                                <div>
-                                    <h4>Esperienza</h4>
-                                    <p>5+ anni in sviluppo software</p>
-                                </div>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-code"></i>
-                                <div>
-                                    <h4>Focus</h4>
-                                    <p>Backend, Performance, Security</p>
-                                </div>
-                            </div>
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 class="reveal" data-it="01_CHI_SONO.txt" data-en="01_WHOAMI.txt">01_CHI_SONO.txt</h2>
+            <div class="terminal-window reveal">
+                <div class="terminal-bar">
+                    <div style="display:flex; gap:6px;">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                    </div>
+                    <span class="terminal-title">gsimeoni@dev:~</span>
+                </div>
+                <div class="terminal-body">
+                    <span class="prompt">gsimeoni@dev:~$</span> <span class="cmd">cat about.txt</span>
+                    <span class="output" style="margin-top: 12px;" data-it="Software Engineer con <strong>5+ anni di esperienza</strong> nella progettazione e sviluppo di sistemi backend robusti e scalabili, con un forte focus su performance, sicurezza e architettura software." data-en="Software Engineer with <strong>5+ years of experience</strong> designing and building robust, scalable backend systems, with a strong focus on performance, security and software architecture.">
+                        Software Engineer con <strong>5+ anni di esperienza</strong> nella progettazione e sviluppo di sistemi backend robusti e scalabili, con un forte focus su performance, sicurezza e architettura software.
+                    </span>
+                    <span class="output" data-it="Attualmente in <strong>Leonardo S.p.A.</strong>, sviluppo software C++ per sistemi critici di <strong>Air Traffic Management (FDP)</strong> e conduco ricerca su <strong>AI simbolica e SAT solving</strong> applicati a problemi di ottimizzazione combinatoria su larga scala." data-en="Currently at <strong>Leonardo S.p.A.</strong>, developing C++ software for safety-critical <strong>Air Traffic Management (FDP)</strong> systems and conducting research on <strong>symbolic AI and SAT solving</strong> applied to large-scale combinatorial optimization.">
+                        Attualmente in <strong>Leonardo S.p.A.</strong>, sviluppo software C++ per sistemi critici di <strong>Air Traffic Management (FDP)</strong> e conduco ricerca su <strong>AI simbolica e SAT solving</strong> applicati a problemi di ottimizzazione combinatoria su larga scala.
+                    </span>
+                    <span class="output" data-it="La mia expertise spazia da architetture microservizi con <strong>Spring Boot</strong> a sistemi safety-critical in <strong>C++</strong>, passando per progetti personali in <strong>Rust</strong> e <strong>Kotlin</strong>. Appassionato di automated reasoning, linguaggi di programmazione e retro computing." data-en="My expertise spans from microservice architectures with <strong>Spring Boot</strong> to safety-critical systems in <strong>C++</strong>, along with personal projects in <strong>Rust</strong> and <strong>Kotlin</strong>. Passionate about automated reasoning, programming languages and retro computing.">
+                        La mia expertise spazia da architetture microservizi con <strong>Spring Boot</strong> a sistemi safety-critical in <strong>C++</strong>, passando per progetti personali in <strong>Rust</strong> e <strong>Kotlin</strong>. Appassionato di automated reasoning, linguaggi di programmazione e retro computing.
+                    </span>
+                    <span class="prompt">gsimeoni@dev:~$</span> <span class="typing-cursor"></span>
+                </div>
+            </div>
+
+            <!-- Extra info cards -->
+            <div class="extras-grid" style="margin-top: 25px;">
+                <div class="extra-card reveal reveal-delay-1">
+                    <div class="extra-icon"><i class="fas fa-book"></i></div>
+                    <div>
+                        <h4 data-it="Pubblicazioni" data-en="Publications">Pubblicazioni</h4>
+                        <p data-it='Libro di poesie su Amazon: <a href="https://www.amazon.it/Lungo-filo-una-nuvola-Gianmarco/dp/B0CB2FTMH8" target="_blank">"Lungo il filo di una nuvola"</a>' data-en='Poetry book on Amazon: <a href="https://www.amazon.it/Lungo-filo-una-nuvola-Gianmarco/dp/B0CB2FTMH8" target="_blank">"Lungo il filo di una nuvola"</a>'>Libro di poesie su Amazon: <a href="https://www.amazon.it/Lungo-filo-una-nuvola-Gianmarco/dp/B0CB2FTMH8" target="_blank">"Lungo il filo di una nuvola"</a></p>
+                    </div>
+                </div>
+                <div class="extra-card reveal reveal-delay-2">
+                    <div class="extra-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div>
+                        <h4>Tutoring</h4>
+                        <p data-it="Dal 2021 offro tutoraggio privato in matematica e fisica per studenti delle superiori" data-en="Since 2021 I offer private tutoring in math and physics for high school students">Dal 2021 offro tutoraggio privato in matematica e fisica per studenti delle superiori</p>
+                    </div>
+                </div>
+                <div class="extra-card reveal reveal-delay-3">
+                    <div class="extra-icon"><i class="fas fa-trophy"></i></div>
+                    <div>
+                        <h4>Hackathon</h4>
+                        <p data-it="Partecipazione a hackathon con progetti innovativi nel campo healthcare e automotive" data-en="Hackathon participation with innovative projects in healthcare and automotive">Partecipazione a hackathon con progetti innovativi nel campo healthcare e automotive</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2 class="reveal" data-it="02_FORMAZIONE.log" data-en="02_EDUCATION.log">02_FORMAZIONE.log</h2>
+            <div class="edu-box reveal">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div>
+                    <div class="edu-title" data-it="Laurea Triennale in Ingegneria Informatica" data-en="Bachelor's Degree in Computer Engineering">Laurea Triennale in Ingegneria Informatica</div>
+                    <div class="edu-school">Universitas Mercatorum</div>
+                    <div class="edu-date"><i class="fas fa-calendar-alt" style="margin-right:5px;"></i>Roma, Italia</div>
+                </div>
+                <div>
+                    <div class="edu-title" data-it="Diploma Liceo Scientifico opzione Scienze Applicate" data-en="Diploma Scientific High School option Applied Sciences">Diploma Liceo Scientifico opzione Scienze Applicate</div>
+                    <div class="edu-school">ITIS Stanislao Cannizzaro</div>
+                    <div class="edu-date"><i class="fas fa-calendar-alt" style="margin-right:5px;"></i>Roma, Italia</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <h2 class="reveal" data-it="03_ESPERIENZA.sh" data-en="03_EXPERIENCE.sh">03_ESPERIENZA.sh</h2>
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-company"><i class="fas fa-building" style="margin-right:8px; color:var(--accent); font-size:0.9rem;"></i>Leonardo S.p.A.</div>
+                            <div class="timeline-role">Software Engineer</div>
+                        </div>
+                        <div class="timeline-date" data-it="Mag 2026 — Presente" data-en="May 2026 — Present">Mag 2026 — Presente</div>
+                    </div>
+                    <p class="timeline-desc" data-it="Sviluppo software C++ per sistemi critici di Air Traffic Management (FDP), con focus su affidabilità, sicurezza e performance." data-en="C++ software development for safety-critical Air Traffic Management systems (FDP), focusing on reliability, security and performance.">Sviluppo software C++ per sistemi critici di Air Traffic Management (FDP), con focus su affidabilità, sicurezza e performance.</p>
+                    <p class="timeline-desc" data-it="Ricerca su AI simbolica e automated reasoning (SAT solving) applicati a problemi di ottimizzazione combinatoria su larga scala, in Java." data-en="Research on symbolic AI and automated reasoning (SAT solving) applied to large-scale combinatorial optimization problems, in Java.">Ricerca su AI simbolica e automated reasoning (SAT solving) applicati a problemi di ottimizzazione combinatoria su larga scala, in Java.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">ATM / FDP</span>
+                        <span class="skill-tag">SAT Solving</span>
+                        <span class="skill-tag">Safety-Critical</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-company"><i class="fas fa-building" style="margin-right:8px; color:var(--accent); font-size:0.9rem;"></i>Engineering Ingegneria Informatica</div>
+                            <div class="timeline-role">Software Developer Specialist</div>
+                        </div>
+                        <div class="timeline-date" data-it="Lug 2024 — Apr 2026" data-en="Jul 2024 — Apr 2026">Lug 2024 — Apr 2026</div>
+                    </div>
+                    <p class="timeline-desc" data-it="Sviluppo di applicazioni enterprise con focus su performance e scalabilità. Architetture microservizi con Spring Boot." data-en="Enterprise application development focused on performance and scalability. Microservice architectures with Spring Boot.">Sviluppo di applicazioni enterprise con focus su performance e scalabilità. Architetture microservizi con Spring Boot.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">Keycloak</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-company"><i class="fas fa-building" style="margin-right:8px; color:var(--accent); font-size:0.9rem;"></i>NAIS / TechnoSky (ENAV Group)</div>
+                            <div class="timeline-role">Software Analyst — HMI Developer</div>
+                        </div>
+                        <div class="timeline-date" data-it="Feb 2024 — Lug 2024" data-en="Feb 2024 — Jul 2024">Feb 2024 — Lug 2024</div>
+                    </div>
+                    <p class="timeline-desc" data-it="Riprogettato l'HMI per sistemi ATC Tower in Java Swing: custom component event-driven e logiche di calcolo traiettorie in ambiente safety-critical real-time." data-en="Redesigned the HMI for ATC Tower systems in Java Swing: event-driven custom components and trajectory computation logic in a safety-critical real-time environment.">Riprogettato l'HMI per sistemi ATC Tower in Java Swing: custom component event-driven e logiche di calcolo traiettorie in ambiente safety-critical real-time.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java Swing</span>
+                        <span class="skill-tag">JavaFX</span>
+                        <span class="skill-tag">HMI</span>
+                        <span class="skill-tag">ATC</span>
+                        <span class="skill-tag">Safety-Critical</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-company"><i class="fas fa-building" style="margin-right:8px; color:var(--accent); font-size:0.9rem;"></i>SourceSense</div>
+                            <div class="timeline-role">Atlassian Expert</div>
+                        </div>
+                        <div class="timeline-date" data-it="Dic 2022 — Gen 2024" data-en="Dec 2022 — Jan 2024">Dic 2022 — Gen 2024</div>
+                    </div>
+                    <p class="timeline-desc" data-it="Consulenza e implementazione di soluzioni Atlassian" data-en="Consulting and implementation of Atlassian solutions">Consulenza e implementazione di soluzioni Atlassian</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Confluence</span>
+                        <span class="skill-tag">JSM</span>
+                        <span class="skill-tag">Atlassian Cloud</span>
+                        <span class="skill-tag">Groovy</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-company"><i class="fas fa-building" style="margin-right:8px; color:var(--accent); font-size:0.9rem;"></i>NTT Data</div>
+                            <div class="timeline-role">Software Engineer</div>
+                        </div>
+                        <div class="timeline-date" data-it="Set 2022 — Nov 2022" data-en="Sep 2022 — Nov 2022">Set 2022 — Nov 2022</div>
+                    </div>
+                    <p class="timeline-desc" data-it="Sviluppo enterprise software solutions" data-en="Enterprise software solutions development">Sviluppo enterprise software solutions</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java EE</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">ServiceNow</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-company"><i class="fas fa-building" style="margin-right:8px; color:var(--accent); font-size:0.9rem;"></i>JDK Solutions S.r.l</div>
+                            <div class="timeline-role">Java Software Developer</div>
+                        </div>
+                        <div class="timeline-date" data-it="Giu 2021 — Set 2022" data-en="Jun 2021 — Sep 2022">Giu 2021 — Set 2022</div>
+                    </div>
+                    <p class="timeline-desc" data-it="Consulente presso Sourcesense e Accenture Italia" data-en="Consultant at Sourcesense and Accenture Italy">Consulente presso Sourcesense e Accenture Italia</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java EE</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Liferay</span>
+                        <span class="skill-tag">AMQ Broker</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-company"><i class="fas fa-building" style="margin-right:8px; color:var(--accent); font-size:0.9rem;"></i>Exolab S.r.l</div>
+                            <div class="timeline-role">Java Fullstack Developer</div>
+                        </div>
+                        <div class="timeline-date" data-it="Set 2020 — Mag 2021" data-en="Sep 2020 — May 2021">Set 2020 — Mag 2021</div>
+                    </div>
+                    <p class="timeline-desc" data-it="Sviluppo applicazioni full-stack" data-en="Full-stack application development">Sviluppo applicazioni full-stack</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java SE/EE</span>
+                        <span class="skill-tag">Spring / Spring Boot</span>
+                        <span class="skill-tag">MyBatis</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Angular</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certs">
+            <h2 class="reveal" data-it="04_CERTIFICAZIONI.log" data-en="04_CERTIFICATIONS.log">04_CERTIFICAZIONI.log</h2>
+            <div class="cert-container">
+                <div class="cert-box reveal reveal-delay-1">
+                    <div class="cert-icon"><i class="fab fa-java"></i></div>
+                    <div>
+                        <div class="cert-title">Oracle Cloud AI Foundations Associate</div>
+                        <div class="cert-issuer">Oracle</div>
+                        <div class="cert-status"><i class="fas fa-check-circle" style="margin-right:4px;"></i>Certified</div>
+                    </div>
+                    <div>
+                        <div class="cert-title">Oracle Cloud Foundations Associate</div>
+                        <div class="cert-issuer">Oracle</div>
+                        <div class="cert-status"><i class="fas fa-check-circle" style="margin-right:4px;"></i>Certified</div>
+                    </div>
+                    <div>
+                        <div class="cert-title">Oracle Data Foundations Associate</div>
+                        <div class="cert-issuer">Oracle</div>
+                        <div class="cert-status"><i class="fas fa-check-circle" style="margin-right:4px;"></i>Certified</div>
+                    </div>
+                </div>
+                <div class="cert-box reveal reveal-delay-2">
+                    <div class="cert-icon"><i class="fas fa-layer-group"></i></div>
+                    <div>
+                        <div class="cert-title" data-it="IBM Full Stack Software Developer" data-en="IBM Full Stack Software Developer">IBM Full Stack Software Developer</div>
+                        <div class="cert-issuer">IBM — Professional Certificate</div>
+                        <div class="cert-status"><i class="fas fa-check-circle" style="margin-right:4px;"></i>Certified</div>
+                    </div>
+                    <div>
+                        <div class="cert-title" data-it="IBM AI Developer Professional Certificate" data-en="IBM AI Developer Professional Certificate">IBM AI Developer</div>
+                        <div class="cert-issuer">IBM — Professional Certificate</div>
+                        <div class="cert-status"><i class="fas fa-check-circle" style="margin-right:4px;"></i>Certified</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2 class="reveal" data-it="05_PROGETTI.sh" data-en="05_PROJECTS.sh">05_PROGETTI.sh</h2>
+            <div class="projects-grid">
+
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="card-header-bar"><span>project</span><span>★ featured</span></div>
+                    <div class="card-body">
+                        <div class="card-title">DCB-SAT</div>
+                        <p class="card-desc" data-it="Encoder SAT in Java per il problema di Demand-Capacity Balancing: traduce scenari di traffico in formule logiche CNF con vincoli di cardinalità e delega la risoluzione a solver industriali (Kissat/MiniSat), scalando a milioni di variabili e clausole." data-en="SAT Encoder in Java for the Demand-Capacity Balancing problem: translates traffic scenarios into CNF logical formulas with cardinality constraints and delegates resolution to industrial solvers (Kissat/MiniSat), scaling to millions of variables and clauses.">Encoder SAT in Java per il problema di Demand-Capacity Balancing: traduce scenari di traffico in formule logiche CNF con vincoli di cardinalità e delega la risoluzione a solver industriali (Kissat/MiniSat), scalando a milioni di variabili e clausole.</p>
+                        <div class="card-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">SAT / Symbolic AI</span>
+                            <span class="tag">Combinatorial Optimization</span>
                         </div>
                     </div>
-                    <div class="about-extra">
-                        <div class="info-card">
-                            <h3><i class="fas fa-book"></i> Pubblicazioni</h3>
-                            <p>Ho pubblicato un libro di poesie su Amazon: <a href="https://www.amazon.it/Lungo-filo-una-nuvola-Gianmarco/dp/B0CB2FTMH8" target="_blank">"Lungo il filo di una nuvola"</a></p>
+                    <div class="card-actions">
+                        <a href="https://github.com/Stormix-dev/dcb-sat" target="_blank" class="btn btn-sm"><span>SOURCE</span> <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="card-header-bar"><span>project</span><span>★ featured</span></div>
+                    <div class="card-body">
+                        <div class="card-title">Gaussian Elimination</div>
+                        <p class="card-desc" data-it="Implementazione C++ avanzata dell'eliminazione gaussiana con parallelizzazione OpenMP (accelerazione 6.8x su 8 core). Include scomposizione LU, 3 strategie di pivoting e analisi di complessità." data-en="Advanced C++ implementation of Gaussian elimination with OpenMP parallelization (6.8x speedup on 8 cores). Includes LU decomposition, 3 pivoting strategies and complexity analysis.">Implementazione C++ avanzata dell'eliminazione gaussiana con parallelizzazione OpenMP (accelerazione 6.8x su 8 core). Include scomposizione LU, 3 strategie di pivoting e analisi di complessità.</p>
+                        <div class="card-tags">
+                            <span class="tag">C++17</span>
+                            <span class="tag">OpenMP</span>
+                            <span class="tag">Linear Algebra</span>
+                            <span class="tag">Performance</span>
                         </div>
-                        <div class="info-card">
-                            <h3><i class="fas fa-chalkboard-teacher"></i> Tutoring</h3>
-                            <p>Dal 2021 offro tutoraggio privato in matematica e fisica per studenti delle superiori</p>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Stormix-dev/gaussian-elimination-cpp" target="_blank" class="btn btn-sm"><span>SOURCE</span> <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="card-header-bar"><span>project</span><span>★ featured</span></div>
+                    <div class="card-body">
+                        <div class="card-title">GK Chess Engine</div>
+                        <p class="card-desc" data-it="Motore scacchistico completo in Rust con algoritmi di ricerca avanzati e valutazione delle posizioni." data-en="Complete chess engine in Rust with advanced search algorithms and position evaluation.">Motore scacchistico completo in Rust con algoritmi di ricerca avanzati e valutazione delle posizioni.</p>
+                        <div class="card-tags">
+                            <span class="tag">Rust</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Game Theory</span>
                         </div>
-                        <div class="info-card">
-                            <h3><i class="fas fa-trophy"></i> Hackathon</h3>
-                            <p>Partecipazione a hackathon con progetti innovativi nel campo healthcare e automotive</p>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Stormix-dev/gk_chess_engine" target="_blank" class="btn btn-sm"><span>SOURCE</span> <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="card-header-bar"><span>project</span><span>security</span></div>
+                    <div class="card-body">
+                        <div class="card-title">PBKDF2 Implementation</div>
+                        <p class="card-desc" data-it="Implementazione ultra-performante dell'algoritmo PBKDF2 in Rust, C# e Java con focus su sicurezza e velocità." data-en="Ultra-performant PBKDF2 algorithm implementation in Rust, C# and Java, focusing on security and speed.">Implementazione ultra-performante dell'algoritmo PBKDF2 in Rust, C# e Java con focus su sicurezza e velocità.</p>
+                        <div class="card-tags">
+                            <span class="tag">Rust</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Cryptography</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Stormix-dev/PBKDF2-Rust" target="_blank" class="btn btn-sm"><span>SOURCE</span> <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="card-header-bar"><span>project</span><span>ai / nlp</span></div>
+                    <div class="card-body">
+                        <div class="card-title">Emotion Detection</div>
+                        <p class="card-desc" data-it="Web app in Python/Flask con IBM Watson NLP per analisi del sentimento. Test unitari e conformità PEP 8 (PyLint 10/10)." data-en="Python/Flask web app with IBM Watson NLP for sentiment analysis. Unit tests and PEP 8 compliance (PyLint 10/10).">Web app in Python/Flask con IBM Watson NLP per analisi del sentimento. Test unitari e conformità PEP 8 (PyLint 10/10).</p>
+                        <div class="card-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">IBM Watson</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Stormix-dev/final-project-emotion-detection" target="_blank" class="btn btn-sm"><span>SOURCE</span> <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="card-header-bar"><span>project</span><span>networking</span></div>
+                    <div class="card-body">
+                        <div class="card-title">P2P Chat</div>
+                        <p class="card-desc" data-it="Sistema di chat peer-to-peer con Tokio in Rust per comunicazioni distribuite." data-en="Peer-to-peer chat system with Tokio in Rust for distributed communications.">Sistema di chat peer-to-peer con Tokio in Rust per comunicazioni distribuite.</p>
+                        <div class="card-tags">
+                            <span class="tag">Rust</span>
+                            <span class="tag">Tokio</span>
+                            <span class="tag">Networking</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Stormix-dev/p2p_chat" target="_blank" class="btn btn-sm"><span>SOURCE</span> <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="card-header-bar"><span>project</span><span>compilers</span></div>
+                    <div class="card-body">
+                        <div class="card-title">Concatenative Interpreter</div>
+                        <p class="card-desc" data-it="Interprete per linguaggio concatenativo in C, esplorando paradigmi di programmazione alternativi." data-en="Concatenative language interpreter in C, exploring alternative programming paradigms.">Interprete per linguaggio concatenativo in C, esplorando paradigmi di programmazione alternativi.</p>
+                        <div class="card-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Compilers</span>
+                            <span class="tag">Languages</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Stormix-dev/concatenative-interpreter" target="_blank" class="btn btn-sm"><span>SOURCE</span> <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="card-header-bar"><span>project</span><span>e-commerce</span></div>
+                    <div class="card-body">
+                        <div class="card-title">Anonymous Bookstore</div>
+                        <p class="card-desc" data-it="E-commerce privacy-oriented con Spring Boot, focus su anonimato e sicurezza utente." data-en="Privacy-oriented e-commerce with Spring Boot, focusing on anonymity and user security.">E-commerce privacy-oriented con Spring Boot, focus su anonimato e sicurezza utente.</p>
+                        <div class="card-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Privacy</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Stormix-dev/anonymous-bookstore" target="_blank" class="btn btn-sm"><span>SOURCE</span> <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="card-header-bar"><span>project</span><span>algorithms</span></div>
+                    <div class="card-body">
+                        <div class="card-title">Codewars Solutions</div>
+                        <p class="card-desc" data-it="Raccolta di soluzioni algoritmiche su Codewars, principalmente in Java." data-en="Collection of algorithmic solutions on Codewars, mainly in Java.">Raccolta di soluzioni algoritmiche su Codewars, principalmente in Java.</p>
+                        <div class="card-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Problem Solving</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Stormix-dev/Codewars" target="_blank" class="btn btn-sm"><span>SOURCE</span> <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://github.com/Stormix-dev" target="_blank" class="btn">
+                    <span data-it="TUTTI I PROGETTI SU GITHUB" data-en="ALL PROJECTS ON GITHUB">TUTTI I PROGETTI SU GITHUB</span> <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2 class="reveal" data-it="06_COMPETENZE.conf" data-en="06_SKILLS.conf">06_COMPETENZE.conf</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category-card reveal">
+                    <div class="skill-category-title"><i class="fas fa-code"></i> <span data-it="Linguaggi" data-en="Languages">Linguaggi</span></div>
+                    <div class="skill-items">
+                        <span class="skill-badge primary">Java SE/EE</span>
+                        <span class="skill-badge primary">C++</span>
+                        <span class="skill-badge primary">Kotlin</span>
+                        <span class="skill-badge primary">Rust</span>
+                        <span class="skill-badge primary">C</span>
+                        <span class="skill-badge">Groovy</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">HTML/CSS</span>
+                        <span class="skill-badge">LaTeX</span>
+                        <span class="skill-badge">Prolog</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card reveal">
+                    <div class="skill-category-title"><i class="fab fa-java"></i> Java Ecosystem</div>
+                    <div class="skill-items">
+                        <span class="skill-badge primary">Spring Boot</span>
+                        <span class="skill-badge primary">Spring Data JPA</span>
+                        <span class="skill-badge primary">Spring Security</span>
+                        <span class="skill-badge primary">Spring MVC</span>
+                        <span class="skill-badge">Spring Cloud Gateway</span>
+                        <span class="skill-badge">Hibernate</span>
+                        <span class="skill-badge">myBatis</span>
+                        <span class="skill-badge">Liferay</span>
+                        <span class="skill-badge">JavaFX</span>
+                        <span class="skill-badge">Swing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card reveal">
+                    <div class="skill-category-title"><i class="fas fa-database"></i> Database</div>
+                    <div class="skill-items">
+                        <span class="skill-badge primary">PostgreSQL</span>
+                        <span class="skill-badge primary">MySQL</span>
+                        <span class="skill-badge primary">OracleSQL</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">DBeaver</span>
+                        <span class="skill-badge">HeidiSQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card reveal">
+                    <div class="skill-category-title"><i class="fas fa-cloud"></i> DevOps & Cloud</div>
+                    <div class="skill-items">
+                        <span class="skill-badge primary">Git</span>
+                        <span class="skill-badge primary">Docker</span>
+                        <span class="skill-badge primary">Maven</span>
+                        <span class="skill-badge primary">Gradle</span>
+                        <span class="skill-badge">Jenkins</span>
+                        <span class="skill-badge">Kubernetes</span>
+                        <span class="skill-badge">Google Cloud</span>
+                        <span class="skill-badge">Azure</span>
+                        <span class="skill-badge">Tomcat</span>
+                        <span class="skill-badge">WildFly</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card reveal">
+                    <div class="skill-category-title"><i class="fas fa-shield-alt"></i> Security</div>
+                    <div class="skill-items">
+                        <span class="skill-badge primary">Keycloak</span>
+                        <span class="skill-badge primary">SAML2</span>
+                        <span class="skill-badge primary">SonarQube</span>
+                        <span class="skill-badge">WSO2</span>
+                        <span class="skill-badge">Burp Suite</span>
+                        <span class="skill-badge">Kali Linux</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card reveal">
+                    <div class="skill-category-title"><i class="fas fa-brain"></i> AI & Reasoning</div>
+                    <div class="skill-items">
+                        <span class="skill-badge">SAT Solving</span>
+                        <span class="skill-badge">CNF / DIMACS</span>
+                        <span class="skill-badge">Cardinality Constraints</span>
+                        <span class="skill-badge">Kissat / MiniSat</span>
+                        <span class="skill-badge">Combinatorial Optimization</span>
+                        <span class="skill-badge">Prolog</span>
+                    </div>
+                </div>
+
+                <div class="skill-category-card full-width reveal">
+                    <div class="skill-category-title"><i class="fas fa-drafting-compass"></i> <span data-it="Architettura Software" data-en="Software Architecture">Architettura Software</span></div>
+                    <div class="architecture-grid">
+                        <div class="architecture-item">
+                            <h4 data-it="Principi" data-en="Principles">Principi</h4>
+                            <ul>
+                                <li>SOLID Principles</li>
+                                <li>Clean Architecture</li>
+                                <li>Domain-Driven Design</li>
+                                <li>Microservices</li>
+                            </ul>
+                        </div>
+                        <div class="architecture-item">
+                            <h4>Design Patterns</h4>
+                            <ul>
+                                <li>MVC</li>
+                                <li>Singleton / Factory</li>
+                                <li>Observer / Adapter</li>
+                                <li>Repository Pattern</li>
+                            </ul>
+                        </div>
+                        <div class="architecture-item">
+                            <h4>Enterprise Patterns</h4>
+                            <ul>
+                                <li>DAO / DTO</li>
+                                <li>Service Layer</li>
+                                <li>RestController-Service-Repo</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="container">
-                <h2 class="section-title">
-                    <span class="title-number">02.</span>
-                    Esperienza Professionale
-                </h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Mag 2026 - Presente</span>
-                            <h3> Software Engineer</h3>
-                            <h4>Leonardo S.p.A. - Electronics Division | DATA AI & Advanced Algorithms</h4>
-                            <p>Sviluppo software (in C++) per sistemi critici di <strong>Air Traffic Management</strong>, sul progetto <strong>FDP (Flight Data Processing)</strong>, con focus su affidabilità, sicurezza e performance. In parallelo, attività di <strong>ricerca su AI simbolica e automated reasoning</strong> (SAT solving) applicati a problemi di <strong>ottimizzazione combinatoria su larga scala</strong>, in Java.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Lug 2024 - Mag 2026</span>
-                            <h3>Software Developer Specialist</h3>
-                            <h4>Engineering Ingegneria Informatica</h4>
-                            <p>Sviluppo di applicazioni enterprise con focus su performance e scalabilità. Progettazione e implementazione di soluzioni software per sistemi complessi</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Feb 2024 - Lug 2024</span>
-                            <h3>Software Analyst</h3>
-                            <h4>NAIS</h4>
-                            <p>Middle Java Standalone Developer presso Techno Sky</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Nov 2022 - Feb 2024</span>
-                            <h3>Atlassian Expert</h3>
-                            <h4>SourceSense</h4>
-                            <p>Consulenza e implementazione di soluzioni Atlassian</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Set 2022 - Nov 2022</span>
-                            <h3>Software Engineer</h3>
-                            <h4>NTT Data</h4>
-                            <p>Sviluppo enterprise software solutions</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Giu 2021 - Set 2022</span>
-                            <h3>Java Software Developer</h3>
-                            <h4>Jdk S.r.l</h4>
-                            <p>Consulente presso Sourcesense e Accenture Italia</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Set 2020 - Mag 2021</span>
-                            <h3>Java Fullstack Developer</h3>
-                            <h4>Exolab S.r.l</h4>
-                            <p>Sviluppo applicazioni full-stack</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2 class="reveal" data-it="07_CONTATTI.msg" data-en="07_CONTACT.msg">07_CONTATTI.msg</h2>
+            <div class="contact-info reveal">
+                <div class="contact-info-item"><i class="fas fa-map-marker-alt"></i> Roma, Italia</div>
+                <div class="contact-info-item"><i class="fas fa-envelope"></i> <a href="mailto:gianmarco.simeoni.LSA@gmail.com">gianmarco.simeoni.LSA@gmail.com</a></div>
+                <div class="contact-info-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gsimeoni-dev/" target="_blank">LinkedIn</a></div>
+                <div class="contact-info-item"><i class="fab fa-github"></i> <a href="https://github.com/Stormix-dev" target="_blank">GitHub</a></div>
+            </div>
+            <div style="text-align: center;">
+                <a href="mailto:gianmarco.simeoni.LSA@gmail.com" class="btn">
+                    <span data-it="SCRIVIMI" data-en="GET IN TOUCH">SCRIVIMI</span> <i class="fas fa-paper-plane"></i>
+                </a>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">
-                    <span class="title-number">03.</span>
-                    Progetti in Evidenza
-                </h2>
-                <div class="projects-grid">
+    </div>
 
-                    <div class="project-card featured">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Stormix-dev/dcb-sat" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>DCB-SAT</h3>
-                        <p>Encoder SAT in Java per il problema di Demand-Capacity Balancing (ottimizzazione combinatoria su larga scala): traduce scenari di traffico in formule logiche CNF con vincoli di cardinalità e delega la risoluzione a solver industriali (Kissat/MiniSat), scalando a milioni di variabili e clausole</p>
-                        <div class="project-tags">
-                            <span>Java</span>
-                            <span>SAT / Symbolic AI</span>
-                            <span>Combinatorial Optimization</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card featured">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Stormix-dev/gaussian-elimination-cpp" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3>Gaussian Elimination</h3>
-                        <p>Implementazione C++ avanzata dell'eliminazione gaussiana con parallelizzazione OpenMP (accelerazione 6,8x su 8 core). Include la scomposizione LU, 3 strategie di pivoting, demo interattiva e analisi completa della complessità.</p>
-                        <div class="project-tags">
-                            <span>C++17</span>
-                            <span>OpenMP</span>
-                            <span>Algebra Lineare</span>
-                            <span>Performance</span>
-                            <span>Optimization</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card featured">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Stormix-dev/final-project-emotion-detection" target="a_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Emotion Detection Web App</h3>
-                        <p>Web application in Python e Flask integrata con l'API IBM Watson NLP per l'analisi del sentimento e delle emozioni nel testo. Include gestione degli errori HTTP status 400, test unitari automatizzati e conformità PEP 8 (PyLint score 10/10).</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>IBM Watson NLP</span>
-                            <span>REST API</span>
-                            <span>Unit Testing</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card featured">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Stormix-dev/gk_chess_engine" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>GK Chess Engine</h3>
-                        <p>Motore scacchistico completo sviluppato in Rust, con algoritmi di ricerca avanzati e valutazione delle posizioni</p>
-                        <div class="project-tags">
-                            <span>Rust</span>
-                            <span>Algorithms</span>
-                            <span>Game Theory</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card featured">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Stormix-dev/PBKDF2-Rust" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>PBKDF2 Implementation</h3>
-                        <p>Implementazione ultra-performante dell'algoritmo PBKDF2 in Rust, C# e Java con focus su sicurezza e velocità</p>
-                        <div class="project-tags">
-                            <span>Rust</span>
-                            <span>Security</span>
-                            <span>Cryptography</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Stormix-dev/p2p_chat" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>P2P Chat</h3>
-                        <p>Sistema di chat peer-to-peer realizzato con Tokio in Rust per comunicazioni distribuite</p>
-                        <div class="project-tags">
-                            <span>Rust</span>
-                            <span>Tokio</span>
-                            <span>Networking</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Stormix-dev/concatenative-interpreter" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Concatenative Interpreter</h3>
-                        <p>Interprete per linguaggio concatenativo sviluppato in C, esplorando paradigmi di programmazione alternativi</p>
-                        <div class="project-tags">
-                            <span>C</span>
-                            <span>Compilers</span>
-                            <span>Languages</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Stormix-dev/anonymous-bookstore" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Anonymous Bookstore</h3>
-                        <p>E-commerce privacy-oriented sviluppato con Spring Boot, con focus su anonimato e sicurezza utente</p>
-                        <div class="project-tags">
-                            <span>Spring Boot</span>
-                            <span>Privacy</span>
-                            <span>E-commerce</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/Stormix-dev/Codewars" target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h3>Codewars Solutions</h3>
-                        <p>Raccolta di soluzioni algoritmiche su Codewars, principalmente in Java, per problem solving avanzato</p>
-                        <div class="project-tags">
-                            <span>Java</span>
-                            <span>Algorithms</span>
-                            <span>Problem Solving</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="more-projects">
-                    <a href="https://github.com/Stormix-dev" target="_blank" class="btn btn-outline">
-                        <i class="fab fa-github"></i> Vedi Altri Progetti su GitHub
-                    </a>
-                </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Gianmarco Simeoni</p>
+            <p style="font-size:0.7rem; margin-top:5px; opacity:0.5;">Designed & Built with precision. No frameworks.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Stormix-dev" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gsimeoni-dev/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:gianmarco.simeoni.LSA@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title">
-                    <span class="title-number">04.</span>
-                    Competenze Tecniche
-                </h2>
-                <div class="skills-container">
-                    <!-- Programming Languages -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Linguaggi di Programmazione</h3>
-                        <div class="skill-items-with-level">
-                            <div class="skill-item-level">
-                                <div class="skill-name">
-                                    <span class="skill-badge expert">Java SE/EE v6+</span>
-                                    <div class="skill-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-item-level">
-                                <div class="skill-name">
-                                    <span class="skill-badge advanced">C++</span>
-                                    <div class="skill-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-item-level">
-                                <div class="skill-name">
-                                    <span class="skill-badge advanced">Kotlin</span>
-                                    <div class="skill-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-item-level">
-                                <div class="skill-name">
-                                    <span class="skill-badge advanced">Groovy</span>
-                                    <div class="skill-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-item-level">
-                                <div class="skill-name">
-                                    <span class="skill-badge advanced">C, Rust</span>
-                                    <div class="skill-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-item-level">
-                                <div class="skill-name">
-                                    <span class="skill-badge advanced">HTML, CSS, LaTeX</span>
-                                    <div class="skill-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-item-level">
-                                <div class="skill-name">
-                                    <span class="skill-badge intermediate">Python</span>
-                                    <div class="skill-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-item-level">
-                                <div class="skill-name">
-                                    <span class="skill-badge intermediate">JavaScript</span>
-                                    <div class="skill-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-item-level">
-                                <div class="skill-name">
-                                    <span class="skill-badge beginner">Prolog</span>
-                                    <div class="skill-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Java Frameworks & Tools -->
-                    <div class="skill-category">
-                        <h3><i class="fab fa-java"></i> Java Frameworks & Ecosistema</h3>
-                        <div class="skill-items">
-                            <div class="skill-badge expert">Spring Boot</div>
-                            <div class="skill-badge expert">Spring Data JPA</div>
-                            <div class="skill-badge expert">Spring Security</div>
-                            <div class="skill-badge expert">Spring MVC</div>
-                            <div class="skill-badge advanced">Spring Cloud Gateway</div>
-                            <div class="skill-badge advanced">Hibernate JPA</div>
-                            <div class="skill-badge advanced">myBatis</div>
-                            <div class="skill-badge intermediate">Liferay</div>
-                            <div class="skill-badge intermediate">Java Servlet</div>
-                            <div class="skill-badge intermediate">EJB</div>
-                            <div class="skill-badge intermediate">Swing</div>
-                            <div class="skill-badge intermediate">JavaFX</div>
-                            <div class="skill-badge intermediate">JSF</div>
-                        </div>
-                    </div>
-
-                    <!-- Web & API -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-globe"></i> Web & API</h3>
-                        <div class="skill-items">
-                            <div class="skill-badge expert">RESTful APIs</div>
-                            <div class="skill-badge expert">JSON</div>
-                            <div class="skill-badge expert">XML</div>
-                            <div class="skill-badge expert">YAML</div>
-                            <div class="skill-badge advanced">SOAP</div>
-                            <div class="skill-badge advanced">Postman</div>
-                            <div class="skill-badge intermediate">GraphQL</div>
-                        </div>
-                    </div>
-
-                    <!-- Database -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Database & Persistence</h3>
-                        <div class="skill-items">
-                            <div class="skill-badge expert">PostgreSQL</div>
-                            <div class="skill-badge expert">MySQL</div>
-                            <div class="skill-badge expert">OracleSQL</div>
-                            <div class="skill-badge expert">HeidiSQL</div>
-                            <div class="skill-badge expert">DBeaver</div>
-                            <div class="skill-badge intermediate">MongoDB</div>
-                        </div>
-                    </div>
-
-                    <!-- DevOps & Cloud -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-cloud"></i> DevOps, Cloud & CI/CD</h3>
-                        <div class="skill-items">
-                            <div class="skill-badge expert">Git</div>
-                            <div class="skill-badge expert">Maven</div>
-                            <div class="skill-badge expert">Gradle</div>
-                            <div class="skill-badge expert">Docker</div>
-                            <div class="skill-badge advanced">Jenkins</div>
-                            <div class="skill-badge advanced">Kubernetes</div>
-                            <div class="skill-badge advanced">Google Cloud</div>
-                            <div class="skill-badge advanced">Microsoft Azure</div>
-                            <div class="skill-badge intermediate">Apache Tomcat</div>
-                            <div class="skill-badge intermediate">WildFly</div>
-                        </div>
-                    </div>
-
-                    <!-- Security -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-shield-alt"></i> Security & Identity</h3>
-                        <div class="skill-items">
-                            <div class="skill-badge expert">Keycloak</div>
-                            <div class="skill-badge expert">SAML2</div>
-                            <div class="skill-badge expert">SonarQube</div>
-                            <div class="skill-badge advanced">WSO2</div>
-                            <div class="skill-badge advanced">Burp Suite</div>
-                            <div class="skill-badge intermediate">Penetration Testing</div>
-                            <div class="skill-badge intermediate">Kali Linux</div>
-                        </div>
-                    </div>
-
-                    <!-- System & Networking -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-server"></i> OS & Networking</h3>
-                        <div class="skill-items">
-                            <div class="skill-badge expert">Linux CLI</div>
-                            <div class="skill-badge expert">SSH/SFTP/FTP</div>
-                            <div class="skill-badge advanced">PuTTY</div>
-                            <div class="skill-badge advanced">VMware vSphere</div>
-                            <div class="skill-badge intermediate">Oracle VirtualBox</div>
-                        </div>
-                    </div>
-
-                    <!-- Atlassian & Project Management -->
-                    <div class="skill-category">
-                        <h3><i class="fab fa-atlassian"></i> Atlassian & PM Tools</h3>
-                        <div class="skill-items">
-                            <div class="skill-badge expert">Jira</div>
-                            <div class="skill-badge expert">Confluence</div>
-                            <div class="skill-badge expert">SourceTree</div>
-                            <div class="skill-badge advanced">Trello</div>
-                            <div class="skill-badge advanced">Atlas</div>
-                            <div class="skill-badge intermediate">IBM RTC</div>
-                            <div class="skill-badge intermediate">IBM DOORS</div>
-                            <div class="skill-badge intermediate">RedHat PAM</div>
-                        </div>
-                    </div>
-
-                    <!-- AI & Automated Reasoning -->
-                    <div class="skill-category">
-                        <h3><i class="fas fa-brain"></i> AI Simbolica & Automated Reasoning</h3>
-                        <div class="skill-items">
-                            <div class="skill-badge intermediate">SAT Solving</div>
-                            <div class="skill-badge intermediate">CNF / DIMACS Encoding</div>
-                            <div class="skill-badge intermediate">Cardinality Constraints</div>
-                            <div class="skill-badge intermediate">Combinatorial Optimization</div>
-                            <div class="skill-badge intermediate">Kissat / MiniSat</div>
-                            <div class="skill-badge intermediate">Prolog</div>
-                        </div>
-                    </div>
-
-                    <!-- Software Design & Architecture -->
-                    <div class="skill-category full-width">
-                        <h3><i class="fas fa-drafting-compass"></i> Software Design & Architettura</h3>
-                        <div class="architecture-grid">
-                            <div class="architecture-item">
-                                <h4>Principi</h4>
-                                <ul>
-                                    <li>SOLID Principles</li>
-                                    <li>Clean Architecture</li>
-                                    <li>Domain-Driven Design</li>
-                                    <li>Microservices Architecture</li>
-                                </ul>
-                            </div>
-                            <div class="architecture-item">
-                                <h4>Design Patterns</h4>
-                                <ul>
-                                    <li>MVC (Model-View-Controller)</li>
-                                    <li>Singleton Pattern</li>
-                                    <li>Factory Method</li>
-                                    <li>Observer Pattern</li>
-                                    <li>Adapter Pattern</li>
-                                </ul>
-                            </div>
-                            <div class="architecture-item">
-                                <h4>Enterprise Patterns</h4>
-                                <ul>
-                                    <li>DAO (Data Access Object)</li>
-                                    <li>DTO (Data Transfer Object)</li>
-                                    <li>Repository Pattern</li>
-                                    <li>Service Layer Pattern</li>
-                                    <li>RestController-Service-Repository</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container contact-container">
-                <h2 class="section-title">
-                    <span class="title-number">05.</span>
-                    Mettiamoci in Contatto
-                </h2>
-                <div class="contact-content">
-                    <p class="contact-text">Sono sempre interessato a nuove opportunità e collaborazioni. Che tu abbia una domanda o voglia semplicemente salutare, sarò felice di risponderti!</p>
-                    <a href="mailto:gianmarco.simeoni.LSA@gmail.com" class="btn btn-primary btn-large">
-                        <i class="fas fa-paper-plane"></i> Scrivimi
-                    </a>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:gianmarco.simeoni.LSA@gmail.com">gianmarco.simeoni.LSA@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/gianmarco-simeoni-software-developer-engineer/" target="_blank">LinkedIn</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/Stormix-dev" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>Designed & Built by Gianmarco Simeoni</p>
+        </div>
     </footer>
 
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+        <div class="sb-group">
+            <span><span class="sb-blink">●</span> ONLINE</span>
+            <span class="sb-sep">│</span>
+            <span id="sb-section">~/home</span>
+            <span class="sb-sep">│</span>
+            <span id="sb-lang">IT</span>
+        </div>
+        <div class="sb-group">
+            <span><i class="fas fa-code" style="font-size:0.65rem;"></i> Java / C++ / Rust</span>
+            <span class="sb-sep">│</span>
+            <span id="sb-clock">--:--:--</span>
+            <span class="sb-sep">│</span>
+            <span id="scroll-progress">0%</span>
+        </div>
+    </div>
+
     <script src="script.js"></script>
-    
 </body>
 </html>
